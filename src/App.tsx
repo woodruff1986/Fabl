@@ -224,7 +224,7 @@ export default function App() {
           </div>
         </Reveal>
 
-        <Reveal as="section" className="section section--muted" id="services">
+        <Reveal as="section" className="section section--muted section--center" id="services">
           <p className="section__eyebrow">Nos services</p>
           <h2 className="section__title">Présents à chaque étape</h2>
           <p className="section__lede">

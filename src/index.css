@@ -362,6 +362,16 @@ button {
   padding-right: max(var(--pad), calc((100% - var(--max)) / 2 + var(--pad)));
 }
 
+.section--center {
+  text-align: center;
+}
+
+.section--center .section__title,
+.section--center .section__lede {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .section__eyebrow {
   margin: 0 0 0.55rem;
   font-size: 0.8rem;
