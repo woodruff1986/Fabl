@@ -396,7 +396,8 @@ button {
 }
 
 .chips {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
+  text-align: center;
 }
 
 .chips__label {
@@ -410,15 +411,19 @@ button {
 .chips ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.55rem 1.25rem;
+  justify-content: center;
+  gap: 0.55rem;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .chips li {
+  padding: 0.55rem 0.95rem;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
   font-family: var(--display);
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: -0.02em;
 }
