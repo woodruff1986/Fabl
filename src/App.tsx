@@ -176,13 +176,6 @@ export default function App() {
               Entrer en contact
             </a>
           </div>
-          <figure className="hero__media">
-            <img
-              src="/images/fond-voie-lactee.jpg"
-              alt="Voie lactée — atmosphère narrative"
-            />
-            <figcaption>Des récits qui restent</figcaption>
-          </figure>
         </section>
 
         <Reveal as="section" className="band" id="approche">
@@ -204,25 +197,21 @@ export default function App() {
         </Reveal>
 
         <Reveal as="section" className="section" id="prestations">
-          <div className="section__head">
-            <p className="section__vertical" aria-hidden="true">
-              Prestations
-            </p>
-            <div>
-              <p className="section__eyebrow">Ce que nous créons</p>
-              <h2 className="section__title">Des récits qui restent</h2>
-              <p className="section__lede">
-                Nous façonnons des expériences narratives calées au
-                millimètre sur votre gameplay — du World Building à la
-                dernière ligne de dialogue.
-              </p>
-            </div>
-          </div>
-          <ul className="cards">
-            {creations.map((item) => (
-              <li key={item.title} className="cards__item">
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
+          <p className="section__eyebrow">Ce que nous créons</p>
+          <h2 className="section__title">Des récits qui restent</h2>
+          <p className="section__lede">
+            Nous façonnons des expériences narratives calées au millimètre
+            sur votre gameplay — du World Building à la dernière ligne de
+            dialogue.
+          </p>
+          <ul className="rows">
+            {creations.map((item, index) => (
+              <li key={item.title}>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </div>
               </li>
             ))}
           </ul>
@@ -251,15 +240,8 @@ export default function App() {
         </Reveal>
 
         <Reveal as="section" className="section" id="preproduction">
-          <div className="section__head">
-            <p className="section__vertical" aria-hidden="true">
-              Pré-prod
-            </p>
-            <div>
-              <p className="section__eyebrow">À la pré-production</p>
-              <h2 className="section__title">Poser les fondations</h2>
-            </div>
-          </div>
+          <p className="section__eyebrow">À la pré-production</p>
+          <h2 className="section__title">Poser les fondations</h2>
           <ol className="rows">
             {preproduction.map((item, index) => (
               <li key={item.title}>
@@ -274,30 +256,24 @@ export default function App() {
         </Reveal>
 
         <Reveal as="section" className="section" id="production">
-          <div className="section__head">
-            <p className="section__vertical" aria-hidden="true">
-              Production
-            </p>
-            <div>
-              <p className="section__eyebrow">En production</p>
-              <h2 className="section__title">Écrire, soigner, livrer</h2>
-            </div>
-          </div>
-          <ul className="cards cards--three">
-            {production.map((item) => (
-              <li key={item.title} className="cards__item">
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
+          <p className="section__eyebrow">En production</p>
+          <h2 className="section__title">Écrire, soigner, livrer</h2>
+          <ul className="rows">
+            {production.map((item, index) => (
+              <li key={item.title}>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </div>
               </li>
             ))}
           </ul>
         </Reveal>
 
-        <Reveal as="section" className="section section--split" id="ateliers">
-          <div>
-            <p className="section__eyebrow">Formation</p>
-            <h2 className="section__title">Ateliers & Transmission</h2>
-          </div>
+        <Reveal as="section" className="section" id="ateliers">
+          <p className="section__eyebrow">Formation</p>
+          <h2 className="section__title">Ateliers & Transmission</h2>
           <div className="split">
             <article>
               <h3>Ateliers d'équipe</h3>
@@ -330,23 +306,19 @@ export default function App() {
           <p className="section__eyebrow">La salle d'écriture au micro</p>
           <h2 className="section__title">Podcast Persona</h2>
           <div className="persona">
-            <div>
-              <p>
-                Chaque épisode, on désosse un personnage de fiction jusqu'à
-                l'os. Ses failles, ses biais, sa mécanique intime.
-              </p>
-              <p>
-                Pas de cours magistral : un ping-pong instinctif, vivant,
-                argumenté. Notre façon de vous montrer comment on réfléchit,
-                semaine après semaine.
-              </p>
-            </div>
-            <aside className="persona__card">
-              <p className="persona__quote">
-                Désosser un personnage jusqu'à l'os.
-              </p>
-              <p className="persona__meta">Écoute · Analyse · Transmission</p>
-            </aside>
+            <p>
+              Chaque épisode, on désosse un personnage de fiction jusqu'à
+              l'os. Ses failles, ses biais, sa mécanique intime.
+            </p>
+            <p>
+              Pas de cours magistral : un ping-pong instinctif, vivant,
+              argumenté. Notre façon de vous montrer comment on réfléchit,
+              semaine après semaine.
+            </p>
+            <p className="persona__quote">
+              Désosser un personnage jusqu'à l'os.
+            </p>
+            <p className="persona__meta">Écoute · Analyse · Transmission</p>
           </div>
         </Reveal>
 
