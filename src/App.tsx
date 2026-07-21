@@ -86,7 +86,6 @@ const production = [
 const stats = [
   { value: "2", label: "Talents, une vision" },
   { value: "FR/EN", label: "Écriture bilingue" },
-  { value: "∞", label: "Angles morts évités" },
 ] as const;
 
 export default function App() {
