@@ -143,10 +143,13 @@ button {
   position: absolute;
   inset: 0;
   z-index: -2;
-  background:
-    radial-gradient(ellipse 70% 55% at 70% 35%, rgba(212, 105, 42, 0.28), transparent 60%),
-    radial-gradient(ellipse 50% 40% at 15% 80%, rgba(168, 82, 32, 0.18), transparent 55%),
-    linear-gradient(165deg, #1a1512 0%, #0c0b0a 45%, #100e0c 100%);
+  background-color: #0c0b0a;
+  background-image:
+    linear-gradient(to top, rgba(12, 11, 10, 0.94) 0%, rgba(12, 11, 10, 0.55) 42%, rgba(12, 11, 10, 0.72) 100%),
+    radial-gradient(ellipse 70% 55% at 70% 35%, rgba(212, 105, 42, 0.22), transparent 60%),
+    url("/images/hero.jpg");
+  background-size: cover;
+  background-position: center 30%;
   overflow: hidden;
 }
 
@@ -170,8 +173,12 @@ button {
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(to top, rgba(12, 11, 10, 0.92) 0%, rgba(12, 11, 10, 0.35) 45%, rgba(12, 11, 10, 0.55) 100%);
+  background: linear-gradient(
+    105deg,
+    rgba(12, 11, 10, 0.78) 0%,
+    rgba(12, 11, 10, 0.35) 55%,
+    rgba(12, 11, 10, 0.55) 100%
+  );
 }
 
 .hero__content {
@@ -470,11 +477,8 @@ button {
 .persona__stage {
   position: relative;
   min-height: 16rem;
-  padding: 1.75rem;
-  border: 1px solid color-mix(in srgb, var(--bone) 14%, transparent);
-  background:
-    radial-gradient(circle at 80% 20%, rgba(212, 105, 42, 0.16), transparent 45%),
-    linear-gradient(160deg, #1a1714, #0f0d0b);
+  padding: 0.25rem 0 0;
+  background: transparent;
 }
 
 .persona__wave {
