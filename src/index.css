@@ -200,7 +200,7 @@ button {
 }
 
 .hero__headline {
-  margin: 0 0 1rem;
+  margin: 0 0 2rem;
   max-width: 18ch;
   font-family: var(--font-display);
   font-size: clamp(1.75rem, 4.2vw, 2.85rem);
@@ -443,6 +443,38 @@ button {
   color: var(--ember);
 }
 
+.offer-list--titled li {
+  display: grid;
+  gap: 0.35rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+.offer-list--titled li::before {
+  display: none;
+}
+
+.offer-list--titled strong {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+  font-weight: 400;
+  color: var(--bone);
+}
+
+.offer-list--titled span {
+  color: var(--bone-dim);
+  font-weight: 300;
+}
+
+.section__lede--wide {
+  max-width: 48ch;
+  margin-bottom: 1rem;
+}
+
+.section__lede + .section__lede {
+  margin-top: 0.75rem;
+}
+
 .propose {
   margin-top: var(--space-lg);
   padding-top: var(--space-md);
@@ -498,6 +530,10 @@ button {
 
   .service-grid--four {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .service-grid--three {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

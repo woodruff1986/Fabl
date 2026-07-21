@@ -1,12 +1,30 @@
 import { Reveal } from "./components/Reveal";
 
 const creations = [
-  "Des expériences de jeu immersives et inoubliables",
-  "Des mondes imaginaires et des récits captivants",
-  "Des personnages divers, complexes et passionnants",
-  "Des game designs riches et engageants",
-  "Des adaptations de licences — ou la conception de licences cross-médias",
-  "Des dialogues riches, profonds, adaptés au ton du jeu et à son gameplay",
+  {
+    title: "Univers & Lore",
+    text: "Des mondes imaginaires denses et captivants.",
+  },
+  {
+    title: "Personnages",
+    text: "Des figures complexes, nuancées, inoubliables.",
+  },
+  {
+    title: "Architecture narrative",
+    text: "Des structures solides et du game design engageant.",
+  },
+  {
+    title: "Licences & Cross-média",
+    text: "Adaptation ou création d'IP originales.",
+  },
+  {
+    title: "Dialogues sur mesure",
+    text: "Un ton incarné, fluide, pensé pour le joueur.",
+  },
+  {
+    title: "Sur-mesure & Urgences",
+    text: "Scriptdoctoring et solutions de crise.",
+  },
 ] as const;
 
 const propositions = [
@@ -41,20 +59,16 @@ const preproduction = [
 
 const production = [
   {
-    title: "Écriture",
-    text: "En tandem, en solo ou avec votre équipe : descriptions et dialogues en français ou en anglais, qui enrichissent l'expérience joueur tout en limitant le budget de traduction. Écrire le contenu narratif du jeu.",
+    title: "Écriture de contenu",
+    text: "Descriptions et dialogues (FR/EN) taillés pour le gameplay, pensés pour optimiser vos coûts de localisation.",
   },
   {
-    title: "Écriture d'urgence",
-    text: "En cas de besoin urgent, nous sommes deux pour garantir la livraison d'un livrable qu'exige à la dernière minute votre éditeur.",
+    title: "Commando Narrative",
+    text: "Un sprint de livraison pour tenir la deadline de l'éditeur sans sacrifier la qualité.",
   },
   {
-    title: "Scriptdoctoring",
-    text: "Vous accompagner pour construire et concevoir l'histoire que vous avez en tête.",
-  },
-  {
-    title: "Révision",
-    text: "Trouver des améliorations, des solutions, et éviter des complications futures.",
+    title: "Scriptdoctoring & Révision",
+    text: "Débloquer un scénario, fluidifier les angles morts, éviter les ratés techniques.",
   },
 ] as const;
 
@@ -97,13 +111,8 @@ export default function App() {
         <div className="hero__content">
           <p className="hero__brand">Fabl</p>
           <h1 className="hero__headline">
-            Le narrative design comme mécanique de précision.
+            Deux talents pour une vision : celle de votre jeu.
           </h1>
-          <p className="hero__lede">
-            Studio bicéphale — un homme, une femme, une caisse de résonance
-            pour croiser les sensibilités et éprouver la musicalité des
-            dialogues.
-          </p>
           <div className="hero__actions">
             <a className="btn btn--primary" href="#prestations">
               Voir les prestations
@@ -120,9 +129,9 @@ export default function App() {
           <p className="section__eyebrow">Approche</p>
           <h2 className="section__title">Une pluralité de regards</h2>
           <p className="section__lede">
-            Face aux exigences d'un jeu vidéo, le binôme limite naturellement
-            les angles morts : caractérisation croisée, ping-pong à voix
-            haute, et matériau prêt à être implémenté.
+            Face aux exigences d'un jeu vidéo, Fabl teste, bouscule, joue les
+            scènes à voix haute. On affine en direct pour livrer une matière
+            brute, vivante, immédiatement prête à l'intégration.
           </p>
         </div>
       </Reveal>
@@ -130,15 +139,19 @@ export default function App() {
       <Reveal as="section" className="section forge" id="prestations">
         <div className="section__inner">
           <p className="section__eyebrow">Ce que nous créons</p>
-          <h2 className="section__title">Nos prestations</h2>
+          <h2 className="section__title">Des récits qui restent</h2>
           <p className="section__lede">
-            Nous pouvons créer pour vous des expériences narratives calées
-            sur le gameplay — du monde au dialogue, de la licence au design.
+            Nous façonnons des expériences narratives calées au millimètre
+            sur votre gameplay — du World Building à la dernière ligne de
+            dialogue.
           </p>
 
-          <ul className="offer-list">
+          <ul className="offer-list offer-list--titled">
             {creations.map((item) => (
-              <li key={item}>{item}</li>
+              <li key={item.title}>
+                <strong>{item.title}</strong>
+                <span>{item.text}</span>
+              </li>
             ))}
           </ul>
 
@@ -157,6 +170,10 @@ export default function App() {
         <div className="section__inner">
           <p className="section__eyebrow">Nos services</p>
           <h2 className="section__title">Présents à chaque étape</h2>
+          <p className="section__lede section__lede--wide">
+            Du relief dans les histoires. Des solutions en prod. De la
+            fluidité à l'intégration.
+          </p>
           <p className="section__lede">
             Nous sommes là pour toutes les étapes de votre projet. En amont
             ou en aval de la production, nous pouvons intervenir à tout
@@ -187,7 +204,7 @@ export default function App() {
         <div className="section__inner">
           <p className="section__eyebrow">En production</p>
           <h2 className="section__title">Écrire, soigner, livrer</h2>
-          <div className="service-grid service-grid--four">
+          <div className="service-grid service-grid--three">
             {production.map((item, index) => (
               <article className="service-item" key={item.title}>
                 <span className="service-item__index">
@@ -204,26 +221,20 @@ export default function App() {
       <Reveal as="section" className="section" id="ateliers">
         <div className="section__inner">
           <p className="section__eyebrow">Formation</p>
-          <h2 className="section__title">Des ateliers</h2>
-          <p className="section__lede">
-            Forts de notre expérience d'enseignants et d'intervenants à
-            l'ISART, Brassart ou ArtworkVFX, nous transmettons à vos équipes
-            les théories dramaturgiques et narratives.
-          </p>
+          <h2 className="section__title">Ateliers & Transmission</h2>
           <div className="audiences">
             <article className="audience">
               <h3 className="audience__title">Ateliers d'équipe</h3>
               <p className="audience__text">
-                Explorer, affiner et structurer la narration de votre projet
-                — une occasion concrète de mettre la théorie au service de
-                votre production.
+                Explorer, structurer et débloquer la narration directement
+                avec vos équipes.
               </p>
             </article>
             <article className="audience">
               <h3 className="audience__title">Mentorat</h3>
               <p className="audience__text">
-                Un accompagnement bienveillant et pédagogique pour votre
-                narrative designer, au plus près des contraintes du pipeline.
+                Un accompagnement exigeant et bienveillant pour vos narrative
+                designers, ancré dans la réalité de la prod.
               </p>
             </article>
           </div>
@@ -232,42 +243,30 @@ export default function App() {
 
       <Reveal as="section" className="section adn" id="conseil">
         <div className="section__inner">
-          <p className="section__eyebrow">Accompagnement</p>
-          <h2 className="section__title">Du conseil</h2>
-          <p className="section__lede">
-            Avant ou pendant la production, nous vous aidons à construire,
-            planifier et budgéter la partie narrative de votre jeu —
-            outils, méthodes, et détection des points de friction.
-          </p>
-          <p className="adn__quote">
-            Apporter surtout des solutions, des recommandations, des idées
-            et des outils qui facilitent la pré-production comme la
-            production.
+          <p className="section__eyebrow">Conseil & Stratégie</p>
+          <h2 className="section__title">Cadrage prod</h2>
+          <p className="section__lede section__lede--wide">
+            Détecter les points de friction avant qu'ils ne coûtent cher.
+            Méthodes, outils, budgets : des solutions concrètes pour que la
+            narrative serve le jeu.
           </p>
         </div>
       </Reveal>
 
       <Reveal as="section" className="section persona" id="persona">
         <div className="section__inner">
-          <p className="section__eyebrow">Laboratoire à ciel ouvert</p>
+          <p className="section__eyebrow">La salle d'écriture au micro</p>
           <h2 className="section__title">Podcast Persona</h2>
           <div className="persona__layout">
             <div className="persona__copy">
               <p>
-                À chaque épisode, le duo s'empare d'un personnage de fiction
-                pour le désosser minutieusement : psychologie, arc narratif,
-                failles, biais, contradictions.
+                Chaque épisode, on désosse un personnage de fiction jusqu'à
+                l'os. Ses failles, ses biais, sa mécanique intime.
               </p>
               <p>
-                L'analyse devient organique — rythmée par l'échange, les
-                nuances, les contre-arguments. C'est le ping-pong de la salle
-                d'écriture, capturé au micro.
-              </p>
-              <p>
-                Pour les producteurs, directeurs créatifs ou élèves
-                potentiels, Persona agit comme une carte de visite : une
-                démonstration en temps réel de l'acuité du regard, semaine
-                après semaine.
+                Pas de cours magistral : un ping-pong instinctif, vivant,
+                argumenté. Notre façon de vous montrer comment on réfléchit,
+                semaine après semaine.
               </p>
             </div>
             <aside className="persona__stage" aria-label="Aperçu Persona">
@@ -281,7 +280,7 @@ export default function App() {
                 ))}
               </div>
               <p className="persona__caption">
-                Désosser un protagoniste jusqu'à l'os moral.
+                Désosser un personnage jusqu'à l'os.
               </p>
               <p className="persona__meta">Écoute · Analyse · Transmission</p>
             </aside>
@@ -293,29 +292,23 @@ export default function App() {
         <div className="section__inner">
           <p className="section__eyebrow">Positionnement</p>
           <h2 className="section__title">ADN</h2>
-          <p className="section__lede">
-            Structure agile, ancrée dans le réel. Le duo arpente les
-            événements de l'industrie, rencontre les producteurs de front,
-            et comprend intimement les réalités financières et techniques
-            du milieu.
-          </p>
-          <p className="adn__quote">
-            Des partenaires créatifs capables de s'intégrer temporairement à
-            une équipe de développement — et de livrer un matériau prêt à
-            être implémenté.
+          <p className="section__lede section__lede--wide">
+            Pas de théorie hors-sol. On connaît le terrain, la réalité des
+            budgets et les contraintes de pipeline. On s'immerge dans votre
+            équipe, on épouse votre rythme, et on livre du concret : une
+            narration sur mesure pour vous et vos joueurs.
           </p>
         </div>
       </Reveal>
 
       <Reveal as="section" className="section contact" id="contact">
         <div className="section__inner">
-          <p className="section__eyebrow">Prochaine étape</p>
-          <h2 className="section__title">Parlons production</h2>
+          <p className="section__eyebrow">Contact</p>
+          <h2 className="section__title">Parlons de votre jeu</h2>
           <div className="contact__panel">
             <p className="contact__note">
-              Pré-production, écriture, ateliers ou conseil narratif — le
-              duo intervient auprès des équipes de développement à chaque
-              étape du projet.
+              Une pré-prod à lancer, un dialogue à affûter, un atelier à
+              organiser ? Écrivez-nous.
             </p>
             <a className="btn btn--primary" href="#prestations">
               Revoir les prestations
