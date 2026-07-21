@@ -271,7 +271,7 @@ export default function App() {
         </Reveal>
 
         <Reveal as="section" className="section" id="ateliers">
-          <p className="section__eyebrow">Formation</p>
+          <p className="section__title">Formation</p>
           <h2 className="section__title">Ateliers & Transmission</h2>
           <div className="split">
             <article>
