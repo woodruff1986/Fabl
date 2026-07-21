@@ -160,9 +160,8 @@ export default function App() {
           <h1 className="hero__title">Fabl</h1>
           <p className="hero__eyebrow">Studio de narrative design</p>
           <p className="hero__lead">
-            Deux talents pour une vision :
-            <br />
-            celle de votre jeu.
+            Deux talents pour{" "}
+            <mark className="hero__mark">votre</mark> vision créative.
           </p>
           <div className="hero__actions">
             <a className="btn btn--fill" href="#prestations">

@@ -241,12 +241,23 @@ button {
 
 .hero__lead {
   margin: 0 auto 1.75rem;
-  max-width: 16ch;
+  max-width: 18ch;
   font-family: var(--font);
   font-size: clamp(1.55rem, 3.8vw, 2.6rem);
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.15;
+}
+
+.hero__mark {
+  margin: 0;
+  padding: 0.05em 0.12em;
+  background: linear-gradient(
+    transparent 58%,
+    color-mix(in srgb, var(--ink) 14%, transparent) 58%
+  );
+  color: inherit;
+  font: inherit;
 }
 
 .hero__actions {
