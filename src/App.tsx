@@ -1,4 +1,15 @@
+import { useEffect, useId, useState } from "react";
 import { Reveal } from "./components/Reveal";
+
+const navItems = [
+  { href: "#prestations", label: "Prestations" },
+  { href: "#preproduction", label: "Pré-production" },
+  { href: "#production", label: "Production" },
+  { href: "#ateliers", label: "Ateliers" },
+  { href: "#conseil", label: "Conseil" },
+  { href: "#persona", label: "Persona" },
+  { href: "#contact", label: "Contact" },
+] as const;
 
 const creations = [
   {
@@ -72,260 +83,301 @@ const production = [
   },
 ] as const;
 
-const waveHeights = [42, 68, 55, 88, 36, 74, 60, 92, 48, 70, 58, 80];
+const stats = [
+  { value: "2", label: "Talents, une vision" },
+  { value: "FR/EN", label: "Écriture bilingue" },
+  { value: "∞", label: "Angles morts évités" },
+] as const;
 
 export default function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuId = useId();
+
+  useEffect(() => {
+    document.body.classList.toggle("menu-open", menuOpen);
+    return () => document.body.classList.remove("menu-open");
+  }, [menuOpen]);
+
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <div className="site">
-      <div className="site__sky" aria-hidden="true" />
-
-      <div className="site__panel">
-        <nav className="nav" aria-label="Navigation principale">
-          <a className="nav__brand" href="#top">
-            Fabl
-          </a>
-          <ul className="nav__links">
-            <li>
-              <a href="#prestations">Prestations</a>
-            </li>
-            <li>
-              <a href="#preproduction">Pré-production</a>
-            </li>
-            <li>
-              <a href="#production">Production</a>
-            </li>
-            <li>
-              <a href="#ateliers">Ateliers</a>
-            </li>
-            <li>
-              <a href="#conseil">Conseil</a>
-            </li>
-            <li>
-              <a href="#persona">Persona</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
+      <header className="topbar">
+        <nav className="topbar__side" aria-label="Navigation">
+          {navItems.map((item) => (
+            <a key={item.href} href={item.href}>
+              {item.label}
+            </a>
+          ))}
         </nav>
 
-        <header className="hero" id="top">
-          <p className="hero__brand">Fabl</p>
-          <h1 className="hero__headline">
-            Deux talents pour une vision : celle de votre jeu.
+        <a className="topbar__logo" href="#top">
+          Fabl
+        </a>
+
+        <button
+          type="button"
+          className="topbar__work"
+          aria-expanded={menuOpen}
+          aria-controls={menuId}
+          onClick={() => setMenuOpen(true)}
+        >
+          Menu
+        </button>
+      </header>
+
+      <div
+        className={`menu ${menuOpen ? "menu--open" : ""}`}
+        id={menuId}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Menu"
+        aria-hidden={!menuOpen}
+      >
+        <button
+          type="button"
+          className="menu__close"
+          aria-label="Fermer le menu"
+          onClick={closeMenu}
+        >
+          <span />
+          <span />
+        </button>
+        <nav className="menu__list">
+          {navItems.map((item) => (
+            <a key={item.href} href={item.href} onClick={closeMenu}>
+              <span className="menu__title">{item.label}</span>
+            </a>
+          ))}
+        </nav>
+      </div>
+      {menuOpen ? (
+        <button
+          type="button"
+          className="menu__backdrop"
+          aria-label="Fermer"
+          onClick={closeMenu}
+        />
+      ) : null}
+
+      <main>
+        <section className="hero" id="top">
+          <p className="hero__eyebrow">Studio de narrative design</p>
+          <h1 className="hero__title">
+            Deux talents pour une vision :
+            <br />
+            celle de votre jeu.
           </h1>
           <div className="hero__actions">
-            <a className="btn btn--primary" href="#prestations">
+            <a className="btn btn--fill" href="#prestations">
               Voir les prestations
             </a>
             <a className="btn btn--ghost" href="#contact">
               Entrer en contact
             </a>
           </div>
-        </header>
+          <figure className="hero__media">
+            <img
+              src="/images/fond-voie-lactee.jpg"
+              alt="Voie lactée — atmosphère narrative"
+            />
+            <figcaption>Des récits qui restent</figcaption>
+          </figure>
+        </section>
 
-        <Reveal as="section" className="section section--tight" id="approche">
-          <div className="section__inner">
-            <p className="section__eyebrow">Approche</p>
-            <h2 className="section__title">Une pluralité de regards</h2>
-            <p className="section__lede">
-              Face aux exigences d'un jeu vidéo, Fabl teste, bouscule, joue
-              les scènes à voix haute. On affine en direct pour livrer une
-              matière brute, vivante, immédiatement prête à l'intégration.
-            </p>
+        <Reveal as="section" className="band" id="approche">
+          <p className="band__kicker">Approche</p>
+          <h2 className="band__title">Une pluralité de regards</h2>
+          <p className="band__text">
+            Face aux exigences d'un jeu vidéo, Fabl teste, bouscule, joue les
+            scènes à voix haute. On affine en direct pour livrer une matière
+            brute, vivante, immédiatement prête à l'intégration.
+          </p>
+          <div className="stats">
+            {stats.map((stat) => (
+              <article key={stat.label} className="stats__item">
+                <p className="stats__value">{stat.value}</p>
+                <p className="stats__label">{stat.label}</p>
+              </article>
+            ))}
           </div>
         </Reveal>
 
         <Reveal as="section" className="section" id="prestations">
-          <div className="section__inner">
-            <p className="section__eyebrow">Ce que nous créons</p>
-            <h2 className="section__title">Des récits qui restent</h2>
-            <p className="section__lede">
-              Nous façonnons des expériences narratives calées au millimètre
-              sur votre gameplay — du World Building à la dernière ligne de
-              dialogue.
+          <div className="section__head">
+            <p className="section__vertical" aria-hidden="true">
+              Prestations
             </p>
-
-            <ul className="offer-list offer-list--titled">
-              {creations.map((item) => (
-                <li key={item.title}>
-                  <strong>{item.title}</strong>
-                  <span>{item.text}</span>
-                </li>
+            <div>
+              <p className="section__eyebrow">Ce que nous créons</p>
+              <h2 className="section__title">Des récits qui restent</h2>
+              <p className="section__lede">
+                Nous façonnons des expériences narratives calées au
+                millimètre sur votre gameplay — du World Building à la
+                dernière ligne de dialogue.
+              </p>
+            </div>
+          </div>
+          <ul className="cards">
+            {creations.map((item) => (
+              <li key={item.title} className="cards__item">
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </li>
+            ))}
+          </ul>
+          <div className="chips">
+            <p className="chips__label">Nous vous proposons aussi</p>
+            <ul>
+              {propositions.map((item) => (
+                <li key={item}>{item}</li>
               ))}
             </ul>
-
-            <div className="propose">
-              <p className="propose__label">Nous vous proposons aussi</p>
-              <ul className="propose__list">
-                {propositions.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </div>
           </div>
         </Reveal>
 
-        <Reveal as="section" className="section section--tight" id="services">
-          <div className="section__inner">
-            <p className="section__eyebrow">Nos services</p>
-            <h2 className="section__title">Présents à chaque étape</h2>
-            <p className="section__lede section__lede--wide">
-              Du relief dans les histoires. Des solutions en prod. De la
-              fluidité à l'intégration.
-            </p>
-            <p className="section__lede">
-              Nous sommes là pour toutes les étapes de votre projet. En amont
-              ou en aval de la production, nous pouvons intervenir à tout
-              moment.
-            </p>
-          </div>
+        <Reveal as="section" className="section section--muted" id="services">
+          <p className="section__eyebrow">Nos services</p>
+          <h2 className="section__title">Présents à chaque étape</h2>
+          <p className="section__lede">
+            Du relief dans les histoires. Des solutions en prod. De la
+            fluidité à l'intégration.
+          </p>
+          <p className="section__lede">
+            Nous sommes là pour toutes les étapes de votre projet. En amont
+            ou en aval de la production, nous pouvons intervenir à tout
+            moment.
+          </p>
         </Reveal>
 
         <Reveal as="section" className="section" id="preproduction">
-          <div className="section__inner">
-            <p className="section__eyebrow">À la pré-production</p>
-            <h2 className="section__title">Poser les fondations</h2>
-            <div className="service-grid">
-              {preproduction.map((item, index) => (
-                <article className="service-item" key={item.title}>
-                  <span className="service-item__index">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <h3 className="service-item__title">{item.title}</h3>
-                  <p className="service-item__text">{item.text}</p>
-                </article>
-              ))}
+          <div className="section__head">
+            <p className="section__vertical" aria-hidden="true">
+              Pré-prod
+            </p>
+            <div>
+              <p className="section__eyebrow">À la pré-production</p>
+              <h2 className="section__title">Poser les fondations</h2>
             </div>
           </div>
+          <ol className="rows">
+            {preproduction.map((item, index) => (
+              <li key={item.title}>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
         </Reveal>
 
         <Reveal as="section" className="section" id="production">
-          <div className="section__inner">
-            <p className="section__eyebrow">En production</p>
-            <h2 className="section__title">Écrire, soigner, livrer</h2>
-            <div className="service-grid service-grid--three">
-              {production.map((item, index) => (
-                <article className="service-item" key={item.title}>
-                  <span className="service-item__index">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <h3 className="service-item__title">{item.title}</h3>
-                  <p className="service-item__text">{item.text}</p>
-                </article>
-              ))}
+          <div className="section__head">
+            <p className="section__vertical" aria-hidden="true">
+              Production
+            </p>
+            <div>
+              <p className="section__eyebrow">En production</p>
+              <h2 className="section__title">Écrire, soigner, livrer</h2>
             </div>
           </div>
+          <ul className="cards cards--three">
+            {production.map((item) => (
+              <li key={item.title} className="cards__item">
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </li>
+            ))}
+          </ul>
         </Reveal>
 
-        <Reveal as="section" className="section" id="ateliers">
-          <div className="section__inner">
+        <Reveal as="section" className="section section--split" id="ateliers">
+          <div>
             <p className="section__eyebrow">Formation</p>
             <h2 className="section__title">Ateliers & Transmission</h2>
-            <div className="audiences">
-              <article className="audience">
-                <h3 className="audience__title">Ateliers d'équipe</h3>
-                <p className="audience__text">
-                  Explorer, structurer et débloquer la narration directement
-                  avec vos équipes.
-                </p>
-              </article>
-              <article className="audience">
-                <h3 className="audience__title">Mentorat</h3>
-                <p className="audience__text">
-                  Un accompagnement exigeant et bienveillant pour vos
-                  narrative designers, ancré dans la réalité de la prod.
-                </p>
-              </article>
+          </div>
+          <div className="split">
+            <article>
+              <h3>Ateliers d'équipe</h3>
+              <p>
+                Explorer, structurer et débloquer la narration directement
+                avec vos équipes.
+              </p>
+            </article>
+            <article>
+              <h3>Mentorat</h3>
+              <p>
+                Un accompagnement exigeant et bienveillant pour vos narrative
+                designers, ancré dans la réalité de la prod.
+              </p>
+            </article>
+          </div>
+        </Reveal>
+
+        <Reveal as="section" className="section section--muted" id="conseil">
+          <p className="section__eyebrow">Conseil & Stratégie</p>
+          <h2 className="section__title">Cadrage prod</h2>
+          <p className="section__lede section__lede--wide">
+            Détecter les points de friction avant qu'ils ne coûtent cher.
+            Méthodes, outils, budgets : des solutions concrètes pour que la
+            narrative serve le jeu.
+          </p>
+        </Reveal>
+
+        <Reveal as="section" className="section" id="persona">
+          <p className="section__eyebrow">La salle d'écriture au micro</p>
+          <h2 className="section__title">Podcast Persona</h2>
+          <div className="persona">
+            <div>
+              <p>
+                Chaque épisode, on désosse un personnage de fiction jusqu'à
+                l'os. Ses failles, ses biais, sa mécanique intime.
+              </p>
+              <p>
+                Pas de cours magistral : un ping-pong instinctif, vivant,
+                argumenté. Notre façon de vous montrer comment on réfléchit,
+                semaine après semaine.
+              </p>
             </div>
+            <aside className="persona__card">
+              <p className="persona__quote">
+                Désosser un personnage jusqu'à l'os.
+              </p>
+              <p className="persona__meta">Écoute · Analyse · Transmission</p>
+            </aside>
           </div>
         </Reveal>
 
-        <Reveal as="section" className="section" id="conseil">
-          <div className="section__inner">
-            <p className="section__eyebrow">Conseil & Stratégie</p>
-            <h2 className="section__title">Cadrage prod</h2>
-            <p className="section__lede section__lede--wide">
-              Détecter les points de friction avant qu'ils ne coûtent cher.
-              Méthodes, outils, budgets : des solutions concrètes pour que la
-              narrative serve le jeu.
-            </p>
-          </div>
-        </Reveal>
-
-        <Reveal as="section" className="section persona" id="persona">
-          <div className="section__inner">
-            <p className="section__eyebrow">La salle d'écriture au micro</p>
-            <h2 className="section__title">Podcast Persona</h2>
-            <div className="persona__layout">
-              <div className="persona__copy">
-                <p>
-                  Chaque épisode, on désosse un personnage de fiction jusqu'à
-                  l'os. Ses failles, ses biais, sa mécanique intime.
-                </p>
-                <p>
-                  Pas de cours magistral : un ping-pong instinctif, vivant,
-                  argumenté. Notre façon de vous montrer comment on
-                  réfléchit, semaine après semaine.
-                </p>
-              </div>
-              <aside className="persona__stage" aria-label="Aperçu Persona">
-                <div className="persona__wave" aria-hidden="true">
-                  {waveHeights.map((height, index) => (
-                    <span
-                      key={index}
-                      className="persona__bar"
-                      style={{ height: `${height}%` }}
-                    />
-                  ))}
-                </div>
-                <p className="persona__caption">
-                  Désosser un personnage jusqu'à l'os.
-                </p>
-                <p className="persona__meta">
-                  Écoute · Analyse · Transmission
-                </p>
-              </aside>
-            </div>
-          </div>
-        </Reveal>
-
-        <Reveal as="section" className="section" id="adn">
-          <div className="section__inner">
-            <p className="section__eyebrow">Positionnement</p>
-            <h2 className="section__title">ADN</h2>
-            <p className="section__lede section__lede--wide">
-              Pas de théorie hors-sol. On connaît le terrain, la réalité des
-              budgets et les contraintes de pipeline. On s'immerge dans votre
-              équipe, on épouse votre rythme, et on livre du concret : une
-              narration sur mesure pour vous et vos joueurs.
-            </p>
-          </div>
+        <Reveal as="section" className="band" id="adn">
+          <p className="band__kicker">Positionnement</p>
+          <h2 className="band__title">ADN</h2>
+          <p className="band__text">
+            Pas de théorie hors-sol. On connaît le terrain, la réalité des
+            budgets et les contraintes de pipeline. On s'immerge dans votre
+            équipe, on épouse votre rythme, et on livre du concret : une
+            narration sur mesure pour vous et vos joueurs.
+          </p>
         </Reveal>
 
         <Reveal as="section" className="section contact" id="contact">
-          <div className="section__inner">
-            <p className="section__eyebrow">Contact</p>
-            <h2 className="section__title">Parlons de votre jeu</h2>
-            <div className="contact__panel">
-              <p className="contact__note">
-                Une pré-prod à lancer, un dialogue à affûter, un atelier à
-                organiser ? Écrivez-nous.
-              </p>
-              <a className="btn btn--primary" href="#prestations">
-                Revoir les prestations
-              </a>
-            </div>
-          </div>
+          <p className="section__eyebrow">Contact</p>
+          <h2 className="section__title">Parlons de votre jeu</h2>
+          <p className="section__lede">
+            Une pré-prod à lancer, un dialogue à affûter, un atelier à
+            organiser ? Écrivez-nous.
+          </p>
+          <a className="btn btn--fill" href="#prestations">
+            Revoir les prestations
+          </a>
         </Reveal>
+      </main>
 
-        <footer className="footer">
-          <div className="footer__inner">
-            <span className="footer__brand">Fabl</span>
-            <span>Studio de narrative design</span>
-          </div>
-        </footer>
-      </div>
+      <footer className="footer">
+        <span className="footer__brand">Fabl</span>
+        <span>Studio de narrative design</span>
+      </footer>
     </div>
   );
 }
