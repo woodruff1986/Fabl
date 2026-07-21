@@ -110,10 +110,6 @@ export default function App() {
           ))}
         </nav>
 
-        <a className="topbar__logo" href="#top">
-          Fabl
-        </a>
-
         <button
           type="button"
           className="topbar__work"
@@ -161,12 +157,13 @@ export default function App() {
 
       <main>
         <section className="hero" id="top">
+          <h1 className="hero__title">Fabl</h1>
           <p className="hero__eyebrow">Studio de narrative design</p>
-          <h1 className="hero__title">
+          <p className="hero__lead">
             Deux talents pour une vision :
             <br />
             celle de votre jeu.
-          </h1>
+          </p>
           <div className="hero__actions">
             <a className="btn btn--fill" href="#prestations">
               Voir les prestations
