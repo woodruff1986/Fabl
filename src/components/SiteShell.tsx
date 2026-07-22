@@ -111,6 +111,7 @@ export function SiteShell({ navItems, children }: SiteShellProps) {
           Fabl
         </Link>
         <span>Studio de narrative design</span>
+        <Link to="/v2">V2</Link>
       </footer>
     </div>
   );
