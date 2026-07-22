@@ -200,14 +200,6 @@ export default function HomePageV2() {
       <main>
         <section className="v2-hero" id="top">
           <HeroMark />
-          <aside className="v2-glass v2-glass--a">
-            <strong>+ Narrative Design</strong>
-            Worldbuilding, personnages, dialogues
-          </aside>
-          <aside className="v2-glass v2-glass--b">
-            <strong>+ Deux regards</strong>
-            Une matière brute, prête à l'intégration
-          </aside>
 
           <div className="v2-hero__content">
             <p className="v2-hero__brand">Fabl</p>
