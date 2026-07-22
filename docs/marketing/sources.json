@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-07-22",
+  "purpose": "SEO and social marketing knowledge base for Fabl narrative design studio",
+  "scraping_policy": {
+    "instagram": "forbidden_tos",
+    "linkedin": "forbidden_tos_except_public_citations_via_search",
+    "allowed": ["public_blogs", "medium", "substack", "gamedeveloper", "author_sites", "indexed_public_posts"]
+  },
+  "sources": [
+    {
+      "id": "kuelz-2016",
+      "title": "Narrative Design Tips I Wish I'd Known",
+      "author": "David Kuelz",
+      "url": "https://www.gamedeveloper.com/design/narrative-design-tips-i-wish-i-d-known",
+      "year": 2016,
+      "themes": ["verbs", "environmental_storytelling", "writing_as_feedback", "reactive_world"]
+    },
+    {
+      "id": "dinehart-architecture-2026",
+      "title": "Story Is Architecture, Not Decoration",
+      "author": "Stephen Erin Dinehart IV",
+      "url": "https://narrativedesigner.com/blog/story-is-architecture.html",
+      "year": 2026,
+      "themes": ["architecture", "mechanics_as_narrative", "production"]
+    },
+    {
+      "id": "maggs-nd-101-2020",
+      "title": "The Art of Video Game Narrative Design 101",
+      "author": "Brooke Maggs",
+      "url": "https://medium.com/@brooke.maggs/the-art-of-video-game-narrative-design-101-c7a5f119d77",
+      "year": 2020,
+      "themes": ["nd_vs_writer", "verbs_meaning", "player_experience"]
+    },
+    {
+      "id": "garrett-logistics-2026",
+      "title": "Narrative Design is a Logistics Problem",
+      "author": "Tomas Nyx Garrett",
+      "url": "https://medium.com/@tomas.ca.garrett/narrative-design-is-a-logistics-problem-5c202b4b30a2",
+      "year": 2026,
+      "themes": ["worldbuilding", "logistics", "world_candy"]
+    },
+    {
+      "id": "short-storylets-2019",
+      "title": "Storylets: You Want Them",
+      "author": "Emily Short",
+      "url": "https://emshort.blog/2019/11/29/storylets-you-want-them/",
+      "year": 2019,
+      "themes": ["storylets", "structure", "procedural"]
+    },
+    {
+      "id": "bender-sample-linkedin",
+      "title": "On decontextualized writing samples for game roles",
+      "author": "Kelly Bender",
+      "url": "https://www.linkedin.com/posts/kellybender17_narrativedesign-narrativedesigntip-gamewriter-activity-7430816564792229889-HBwK",
+      "year": 2026,
+      "themes": ["hiring", "craft_constraints", "game_writing"]
+    },
+    {
+      "id": "narrative-news-day-in-life-2026",
+      "title": "A Day in the Life of a Narrative Designer",
+      "author": "Narrative News",
+      "url": "https://narrativenews.substack.com/p/a-day-in-the-life-of-a-narrative",
+      "year": 2026,
+      "themes": ["briefs", "pillars", "production"]
+    },
+    {
+      "id": "celtx-game-script",
+      "title": "How to Write a Video Game Script",
+      "author": "Celtx Blog",
+      "url": "https://blog.celtx.com/how-to-write-a-video-game-script/",
+      "year": null,
+      "themes": ["script_structure", "branching", "with_the_player"]
+    },
+    {
+      "id": "the-narrative-designer-what-is",
+      "title": "What is Narrative Design?",
+      "author": "The Narrative Designer",
+      "url": "https://www.the-narrative-designer.com/what-is-narrative-design/",
+      "year": null,
+      "themes": ["definition", "narrative_language"]
+    }
+  ],
+  "watchlist_linkedin": [
+    "https://www.linkedin.com/in/kellybender17",
+    "https://www.linkedin.com/in/cheyennemorrin",
+    "https://www.linkedin.com/in/lydiacockerham",
+    "https://www.linkedin.com/in/jessicarsliwinski"
+  ]
+}
