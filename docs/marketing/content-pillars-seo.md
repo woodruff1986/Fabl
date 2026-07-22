@@ -57,6 +57,10 @@ Cible : studios, producers, lead designers FR/EN qui cherchent narrative design,
 10. « Il n’y a pas de trou narratif là où il n’y a pas de sol. »
 11. « Un bark n’informe pas seulement : il fait croire que le monde tourne sans vous. »
 12. « Cognition + émotion = expérience. Mechanics sans sens = exercice. »
+13. « Un jeu n’a pas besoin d’une structure complexe — il a besoin de la structure adaptée. »
+14. « Un choix n’est pas une feature. C’est une promesse. »
+15. « Le bouton dit l’acte. La réplique est la conséquence. »
+16. « Story Architect : ce qui doit être vrai. Narrative Architect : le moteur qui le tient. »
 
 ## CTA alignés Fabl
 

@@ -18,13 +18,18 @@ Hashtags utiles : `#NarrativeDesign` `#NarrativeDesignTip` `#GameWriter` `#GameD
 
 | Source | Type | Lien |
 | --- | --- | --- |
-| Sarah Beaulieu | Site craft FR/EN (barks, ND, mécaniques) | https://sarah-beaulieu.com/ — dossier : [sarah-beaulieu.md](./sarah-beaulieu.md) |
-| Emily Short | Interactive storytelling, storylets | https://emshort.blog/ |
+| Sarah Beaulieu | Site craft FR/EN | https://sarah-beaulieu.com/ — [dossier](./sarah-beaulieu.md) |
+| Atozi (Antonin Demeilliez) | Analyses ND FR | https://atozi.blog/ |
+| Ronan Le Breton | Manuel ND FR | https://ronanlebreton.com/ |
+| Emily Short | Interactive storytelling | https://emshort.blog/ |
 | NarrativeDesigner.com | Essais ND | https://narrativedesigner.com/ |
+| Theo Priestley | Story / Narrative Architect | https://theopriestley.net/ |
+| Hannah Nicklin | Writing for Games | https://www.writingfor.games/ |
+| Toiya Kristen Finley | Game Narrative Toolbox | https://www.toiyakfinley.com/ |
 | Narrative News (Substack) | Veille métier | https://narrativenews.substack.com/ |
 | Game Developer — Design | Articles industry | https://www.gamedeveloper.com/design |
 | GDC YouTube | Talks ND / writing | https://www.youtube.com/@Gdconf |
-| The Narrative Designer | Définition / craft | https://www.the-narrative-designer.com/ |
+| Catalogue complet | — | [sites-craft.md](./sites-craft.md) |
 
 ## Instagram — usage recommandé
 

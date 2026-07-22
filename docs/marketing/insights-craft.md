@@ -127,3 +127,9 @@ Synthèse pour Fabl. Chaque insight est attribué à une source publique. Reform
 ## 13–20. Corpus Sarah Beaulieu (site)
 
 Voir le dossier dédié [sarah-beaulieu.md](./sarah-beaulieu.md) : writer vs ND, mechanics+narrative, potentiel narratif, barks, dosage d’info, open world / arcs Tintin.
+
+---
+
+## 21+. Autres sites craft
+
+Voir [sites-craft.md](./sites-craft.md) : Atozi, NarrativeDesigner.com, Theo Priestley, Ronan Le Breton, Storyflow, Hannah Nicklin, Emily Short (liste de blogs), etc.

@@ -126,6 +126,70 @@
       "url": "https://sarah-beaulieu.com/",
       "year": null,
       "themes": ["profile", "worldbuilding", "script_doctor"]
+    },
+    {
+      "id": "atozi-blog",
+      "title": "From Atozi — Les clefs du narrative design",
+      "author": "Antonin Demeilliez",
+      "url": "https://atozi.blog/",
+      "year": null,
+      "themes": ["structure", "indie_nd", "french"]
+    },
+    {
+      "id": "atozi-frog-detective",
+      "title": "Frog Detective : la chaîne de clefs",
+      "author": "Antonin Demeilliez",
+      "url": "https://atozi.blog/blog/frog/",
+      "year": 2024,
+      "themes": ["structure", "feeling", "investigation"]
+    },
+    {
+      "id": "dinehart-meaningful-choices",
+      "title": "The Anatomy of a Meaningful Choice",
+      "author": "Stephen Erin Dinehart IV",
+      "url": "https://narrativedesigner.com/blog/meaningful-choices.html",
+      "year": 2026,
+      "themes": ["choices", "agency", "consequence"]
+    },
+    {
+      "id": "priestley-architects-2026",
+      "title": "Narrative Architect vs Story Architect",
+      "author": "Theo Priestley",
+      "url": "https://theopriestley.net/2026/05/01/story-architect-narrative-architect/",
+      "year": 2026,
+      "themes": ["roles", "worldbuilding", "systems"]
+    },
+    {
+      "id": "lebreton-manuel-nd",
+      "title": "Je finis d'écrire mon manuel de narrative design",
+      "author": "Ronan Le Breton",
+      "url": "https://ronanlebreton.com/je-finis-ecrire-manuel-narrative-design/",
+      "year": null,
+      "themes": ["definition", "french", "pedagogy"]
+    },
+    {
+      "id": "storyflow-branching-dialogue",
+      "title": "How to Write Branching Dialogue That Doesn't Suck",
+      "author": "Storyflow",
+      "url": "https://storyflow-editor.com/blog/how-to-write-branching-dialogue/",
+      "year": 2026,
+      "themes": ["branching", "dialogue", "choice_copy"]
+    },
+    {
+      "id": "nicklin-writing-for-games",
+      "title": "Writing for Games: Theory & Practice",
+      "author": "Hannah Nicklin",
+      "url": "https://www.writingfor.games/",
+      "year": null,
+      "themes": ["craft", "indie", "theory"]
+    },
+    {
+      "id": "short-nd-blogs-list",
+      "title": "Blogs on Narrative Design and Game Writing",
+      "author": "Emily Short",
+      "url": "https://emshort.blog/2019/06/18/narrative-design-related-blogs/",
+      "year": 2019,
+      "themes": ["directory", "watchlist"]
     }
   ],
   "watchlist_linkedin": [
