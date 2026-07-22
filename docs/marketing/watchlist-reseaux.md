@@ -18,6 +18,7 @@ Hashtags utiles : `#NarrativeDesign` `#NarrativeDesignTip` `#GameWriter` `#GameD
 
 | Source | Type | Lien |
 | --- | --- | --- |
+| Sarah Beaulieu | Site craft FR/EN (barks, ND, mécaniques) | https://sarah-beaulieu.com/ — dossier : [sarah-beaulieu.md](./sarah-beaulieu.md) |
 | Emily Short | Interactive storytelling, storylets | https://emshort.blog/ |
 | NarrativeDesigner.com | Essais ND | https://narrativedesigner.com/ |
 | Narrative News (Substack) | Veille métier | https://narrativenews.substack.com/ |
@@ -31,8 +32,9 @@ Pas de scrape. Stratégie :
 
 1. Créer un compte pro Fabl
 2. Suivre hashtags `#narrativedesign` `#gamewriting` `#worldbuilding` `#gamedev`
-3. Sauvegarder manuellement les posts utiles dans une collection « Craft »
-4. Pour extraction structurée : **Meta Content Library** / Graph API (Business + app Meta approuvée), pas Instaloader
+3. Suivre manuellement [@sarah_beaulieu_pro](https://www.instagram.com/sarah_beaulieu_pro/) (notes de scénariste) — **pas** scraper `@beaulieu_sarah`
+4. Sauvegarder manuellement les posts utiles dans une collection « Craft »
+5. Pour extraction structurée : **Meta Content Library** / Graph API (Business + app Meta approuvée), pas Instaloader
 
 Outils GitHub **à ne pas utiliser** pour IG/LI (ToS) : Instaloader, instagram-scraper, linkedin-scraper, Phantombuster non autorisé, etc.
 

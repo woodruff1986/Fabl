@@ -78,12 +78,61 @@
       "url": "https://www.the-narrative-designer.com/what-is-narrative-design/",
       "year": null,
       "themes": ["definition", "narrative_language"]
+    },
+    {
+      "id": "beaulieu-faq-2023",
+      "title": "FAQ – Writers and narrative designers in video games",
+      "author": "Sarah Beaulieu",
+      "url": "https://sarah-beaulieu.com/en/faq-writers-narrative-designers-video-games",
+      "year": 2023,
+      "themes": ["nd_vs_writer", "portfolio", "career"]
+    },
+    {
+      "id": "beaulieu-mechanics-narrative-2024",
+      "title": "Enhancing the game experience by (re)uniting mechanics and narrative",
+      "author": "Sarah Beaulieu",
+      "url": "https://sarah-beaulieu.com/en/enhancing-the-game-experience-by-reuniting-mechanics-and-narrative",
+      "year": 2024,
+      "themes": ["mechanics", "emotion", "player_input", "environmental_storytelling"]
+    },
+    {
+      "id": "beaulieu-barks-2020",
+      "title": "How a character says hello: writing barks for video games",
+      "author": "Sarah Beaulieu",
+      "url": "https://sarah-beaulieu.com/en/writing-barks-for-video-games",
+      "year": 2020,
+      "themes": ["barks", "lore", "characterization", "narrative_potential"]
+    },
+    {
+      "id": "beaulieu-narrative-potential-2021",
+      "title": "Off-screen in screenplays: Introduction to narrative potential",
+      "author": "Sarah Beaulieu",
+      "url": "https://sarah-beaulieu.com/en/off-script",
+      "year": 2021,
+      "themes": ["narrative_potential", "evocation", "microfiction"]
+    },
+    {
+      "id": "beaulieu-measure-info-2021",
+      "title": "How to measure information in a plot",
+      "author": "Sarah Beaulieu",
+      "url": "https://sarah-beaulieu.com/en/how-to-measure-information-in-a-plot",
+      "year": 2021,
+      "themes": ["plot", "exposition", "characterization", "pacing"]
+    },
+    {
+      "id": "beaulieu-site-home",
+      "title": "Sarah Beaulieu — Home",
+      "author": "Sarah Beaulieu",
+      "url": "https://sarah-beaulieu.com/",
+      "year": null,
+      "themes": ["profile", "worldbuilding", "script_doctor"]
     }
   ],
   "watchlist_linkedin": [
     "https://www.linkedin.com/in/kellybender17",
     "https://www.linkedin.com/in/cheyennemorrin",
     "https://www.linkedin.com/in/lydiacockerham",
-    "https://www.linkedin.com/in/jessicarsliwinski"
+    "https://www.linkedin.com/in/jessicarsliwinski",
+    "https://www.linkedin.com/in/sarahbeaulieu"
   ]
 }

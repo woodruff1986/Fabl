@@ -53,6 +53,10 @@ Cible : studios, producers, lead designers FR/EN qui cherchent narrative design,
 6. « Un beau paragraphe hors gameplay ne prouve rien. Un dialogue sous contrainte, si. »
 7. « Trois piliers. Une logline. Le studio s’aligne. »
 8. « On ne raconte pas *au* joueur. On construit ce qu’il vit *avec*. »
+9. « Le narrative design, ce n’est pas ajouter des dialogues — c’est choisir comment le jeu raconte. »
+10. « Il n’y a pas de trou narratif là où il n’y a pas de sol. »
+11. « Un bark n’informe pas seulement : il fait croire que le monde tourne sans vous. »
+12. « Cognition + émotion = expérience. Mechanics sans sens = exercice. »
 
 ## CTA alignés Fabl
 

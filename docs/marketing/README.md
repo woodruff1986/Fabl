@@ -19,6 +19,7 @@ Pour la veille quotidienne : suivre manuellement la [watchlist](./watchlist-rese
 | [insights-craft.md](./insights-craft.md) | Idées, philosophies, angles réutilisables (avec sources) |
 | [content-pillars-seo.md](./content-pillars-seo.md) | Piliers SEO + idées de posts FR |
 | [watchlist-reseaux.md](./watchlist-reseaux.md) | Comptes / auteurs à suivre légalement |
+| [sarah-beaulieu.md](./sarah-beaulieu.md) | Extraction site sarah-beaulieu.com (articles craft) |
 | [sources.json](./sources.json) | Catalogue machine-readable des sources |
 
 ## Mise à jour

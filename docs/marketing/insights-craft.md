@@ -121,3 +121,9 @@ Synthèse pour Fabl. Chaque insight est attribué à une source publique. Reform
 **Angle Fabl :** « Deux talents pour *votre* vision créative. »
 
 **Source :** [How to Write a Video Game Script — Celtx](https://blog.celtx.com/how-to-write-a-video-game-script/)
+
+---
+
+## 13–20. Corpus Sarah Beaulieu (site)
+
+Voir le dossier dédié [sarah-beaulieu.md](./sarah-beaulieu.md) : writer vs ND, mechanics+narrative, potentiel narratif, barks, dosage d’info, open world / arcs Tintin.
