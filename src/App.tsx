@@ -7,9 +7,10 @@ const navItems = [
   { href: "#production", label: "Production" },
   { href: "#ateliers", label: "Ateliers" },
   { href: "#conseil", label: "Conseil" },
+  { href: "#enseignement", label: "Enseignement" },
+  { href: "#trusted", label: "They trusted us" },
   { href: "#persona", label: "Persona" },
   { href: "#experiences", label: "Expériences" },
-  { href: "#enseignement", label: "Enseignement" },
   { href: "#contact", label: "Contact" },
 ] as const;
 
@@ -257,7 +258,6 @@ export default function App() {
         </section>
 
         <Reveal as="section" className="band" id="approche">
-          <p className="band__kicker">Approche</p>
           <h2 className="band__title">Une pluralité de regards</h2>
           <p className="band__text">
             Face aux exigences d'un jeu vidéo, Fabl teste, bouscule, joue les
@@ -272,6 +272,16 @@ export default function App() {
               </article>
             ))}
           </div>
+        </Reveal>
+
+        <Reveal as="section" className="band" id="adn">
+          <h2 className="band__title">ADN</h2>
+          <p className="band__text">
+            Pas de théorie hors-sol. On connaît le terrain, la réalité des
+            budgets et les contraintes de pipeline. On s'immerge dans votre
+            équipe, on épouse votre rythme, et on livre du concret : une
+            narration sur mesure pour vous et vos joueurs.
+          </p>
         </Reveal>
 
         <Reveal as="section" className="section" id="prestations">
@@ -380,6 +390,37 @@ export default function App() {
           </p>
         </Reveal>
 
+        <Reveal as="section" className="section teaching" id="enseignement">
+          <p className="section__eyebrow">Transmission</p>
+          <h2 className="section__title">Enseignement</h2>
+          <ol className="rows">
+            {teaching.map((item, index) => (
+              <li key={item}>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <div>
+                  <h3>{item}</h3>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </Reveal>
+
+        <Reveal as="section" className="section trusted" id="trusted">
+          <p className="section__eyebrow">Partenaires</p>
+          <h2 className="section__title">They trusted us</h2>
+          <p className="section__lede">We worked with</p>
+          <ul className="trusted__grid" aria-label="Partenaires et licences">
+            {trustedBrands.map((brand) => (
+              <li
+                key={"key" in brand ? brand.key : brand.name}
+                className="trusted__cell"
+              >
+                <img src={brand.src} alt={brand.name} loading="lazy" />
+              </li>
+            ))}
+          </ul>
+        </Reveal>
+
         <Reveal as="section" className="section" id="persona">
           <p className="section__eyebrow">La salle d'écriture au micro</p>
           <h2 className="section__title">Podcast Persona</h2>
@@ -400,17 +441,6 @@ export default function App() {
           </div>
         </Reveal>
 
-        <Reveal as="section" className="band" id="adn">
-          <p className="band__kicker">Positionnement</p>
-          <h2 className="band__title">ADN</h2>
-          <p className="band__text">
-            Pas de théorie hors-sol. On connaît le terrain, la réalité des
-            budgets et les contraintes de pipeline. On s'immerge dans votre
-            équipe, on épouse votre rythme, et on livre du concret : une
-            narration sur mesure pour vous et vos joueurs.
-          </p>
-        </Reveal>
-
         <Reveal as="section" className="section experiences" id="experiences">
           <p className="section__eyebrow">Parcours</p>
           <h2 className="section__title">Expériences</h2>
@@ -429,32 +459,6 @@ export default function App() {
                   {item.studio ? ` · ${item.studio}` : null}
                 </p>
                 <p className="xp-list__platform">{item.platform}</p>
-              </li>
-            ))}
-          </ul>
-        </Reveal>
-
-        <Reveal as="section" className="section teaching" id="enseignement">
-          <h2 className="teaching__title">Enseignement</h2>
-          <ul className="teaching__list">
-            {teaching.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </Reveal>
-
-        <Reveal as="section" className="section trusted" id="trusted">
-          <h2 className="trusted__title">
-            They trusted us
-            <span className="trusted__title-sub"> / We worked with</span>
-          </h2>
-          <ul className="trusted__grid" aria-label="Partenaires et licences">
-            {trustedBrands.map((brand) => (
-              <li
-                key={"key" in brand ? brand.key : brand.name}
-                className="trusted__cell"
-              >
-                <img src={brand.src} alt={brand.name} loading="lazy" />
               </li>
             ))}
           </ul>
