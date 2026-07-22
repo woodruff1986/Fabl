@@ -9,6 +9,7 @@ const navItems = [
   { href: "#conseil", label: "Conseil" },
   { href: "#persona", label: "Persona" },
   { href: "#experiences", label: "Expériences" },
+  { href: "#enseignement", label: "Enseignement" },
   { href: "#contact", label: "Contact" },
 ] as const;
 
@@ -59,6 +60,12 @@ const experiences: Experience[] = [
     platform: "Conquistador · Space Immo · Utopiales Game Jam",
   },
 ];
+
+const teaching = [
+  "Intervenant à ISART Digital (depuis 2024)",
+  "Formateur en Narrative Design (Artwork-VFX)",
+  "Professeur en Narrative Design / Scénario (Brassart)",
+] as const;
 
 const trustedBrands = [
   { name: "Original Stormtrooper", src: "/images/trusted/original-stormtrooper.svg" },
@@ -423,6 +430,15 @@ export default function App() {
                 </p>
                 <p className="xp-list__platform">{item.platform}</p>
               </li>
+            ))}
+          </ul>
+        </Reveal>
+
+        <Reveal as="section" className="section teaching" id="enseignement">
+          <h2 className="teaching__title">Enseignement</h2>
+          <ul className="teaching__list">
+            {teaching.map((item) => (
+              <li key={item}>{item}</li>
             ))}
           </ul>
         </Reveal>

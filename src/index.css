@@ -588,6 +588,45 @@ button {
   color: var(--mute);
 }
 
+.teaching {
+  max-width: 42rem;
+}
+
+.teaching__title {
+  margin: 0 0 1.25rem;
+  display: inline-block;
+  padding: 0.45rem 0.75rem;
+  border: 2px solid var(--ink);
+  box-shadow: 3px 3px 0 var(--ink);
+  background: #f5d547;
+  font-family: var(--mono);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.teaching__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.teaching__list li {
+  padding: 1rem 0;
+  border-bottom: 1px dashed rgba(29, 29, 30, 0.28);
+  font-family: var(--mono);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.4;
+}
+
+.teaching__list li:first-child {
+  border-top: 1px dashed rgba(29, 29, 30, 0.28);
+}
+
 .trusted {
   width: min(100%, var(--max));
 }
