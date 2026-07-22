@@ -10,7 +10,7 @@ Comptes et auteurs à **suivre manuellement** ou via newsletters / RSS / API off
 | Cheyenne Pualani Morrin | Systèmes narratifs AAA, hubs état | https://www.linkedin.com/in/cheyennemorrin |
 | Lydia Cockerham | ND principal, collab disciplines | https://www.linkedin.com/in/lydiacockerham |
 | Jessica Sliwinski | Lead writer / ND, pipelines | https://www.linkedin.com/in/jessicarsliwinski |
-| Brooke Maggs | ND Remedy, pédagogie craft | https://www.linkedin.com/in/ (rechercher Brooke Maggs narrative) — blog : https://www.brookemaggs.com |
+| Brooke Maggs | ND Remedy, pédagogie craft | Site : https://www.brookemaggs.com — Medium : https://medium.com/@brooke.maggs |
 
 Hashtags utiles : `#NarrativeDesign` `#NarrativeDesignTip` `#GameWriter` `#GameDev`
 
