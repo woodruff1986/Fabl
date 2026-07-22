@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-label="Téléthon Cinéma">
+  <rect width="200" height="200" fill="#ffffff"/>
+  <text x="100" y="88" text-anchor="middle" font-family="Arial Black, Helvetica Neue, sans-serif" font-size="18" font-weight="800" fill="#1f7a3f">Téléthon</text>
+<text x="100" y="116" text-anchor="middle" font-family="Arial Black, Helvetica Neue, sans-serif" font-size="18" font-weight="800" fill="#1f7a3f">Cinéma</text>
+</svg>

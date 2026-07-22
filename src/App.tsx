@@ -60,30 +60,31 @@ const experiences: Experience[] = [
   },
 ];
 
-const trustedNames = [
-  "Original Stormtrooper",
-  "Snoop Dogg",
-  "Shiro Games",
-  "The Walking Dead",
-  "tap4fun",
-  "The Sandbox",
-  "ISART Digital",
-  "pocketStory",
-  "SEPHORA",
-  "Warner Music Group",
-  "Paris Hilton",
-  "Artefacts Studio",
-  "Le Téléthon Cinéma",
-  ".double2",
-  "Dune",
-  "France 2",
-  "Hellfest",
-  "Atari",
-  "Le Petit Prince",
-  "Les Schtroumpfs",
-  "Brassart",
-  "Metallica",
-  "Nuclear Blast Records",
+const trustedBrands = [
+  { name: "Original Stormtrooper", src: "/images/trusted/original-stormtrooper.svg" },
+  { name: "Snoop Dogg", src: "/images/trusted/snoop-dogg.svg" },
+  { name: "Shiro Games", src: "/images/trusted/shiro-games.svg" },
+  { name: "The Walking Dead", src: "/images/trusted/walking-dead.svg" },
+  { name: "tap4fun", src: "/images/trusted/tap4fun.svg" },
+  { name: "The Sandbox", src: "/images/trusted/sandbox.svg" },
+  { name: "ISART Digital", src: "/images/trusted/isart.svg" },
+  { name: "tap4fun", src: "/images/trusted/tap4fun-text.svg", key: "tap4fun-alt" },
+  { name: "pocketStory", src: "/images/trusted/pocketstory.svg" },
+  { name: "SEPHORA", src: "/images/trusted/sephora.svg" },
+  { name: "Warner Music Group", src: "/images/trusted/warner.svg" },
+  { name: "Paris Hilton", src: "/images/trusted/paris-hilton.svg" },
+  { name: "Artefacts Studio", src: "/images/trusted/artefacts.svg" },
+  { name: "Le Téléthon Cinéma", src: "/images/trusted/telethon.svg" },
+  { name: ".double2", src: "/images/trusted/double2.svg" },
+  { name: "Dune", src: "/images/trusted/dune.svg" },
+  { name: "France 2", src: "/images/trusted/france2.svg" },
+  { name: "Hellfest", src: "/images/trusted/hellfest.svg" },
+  { name: "Atari", src: "/images/trusted/atari.svg" },
+  { name: "Le Petit Prince", src: "/images/trusted/petit-prince.svg" },
+  { name: "Les Schtroumpfs", src: "/images/trusted/schtroumpfs.svg" },
+  { name: "Brassart", src: "/images/trusted/brassart.svg" },
+  { name: "Metallica", src: "/images/trusted/metallica.svg" },
+  { name: "Nuclear Blast Records", src: "/images/trusted/nuclear-blast.svg" },
 ] as const;
 
 const creations = [
@@ -427,11 +428,17 @@ export default function App() {
         </Reveal>
 
         <Reveal as="section" className="section trusted" id="trusted">
-          <h2 className="trusted__title">They trusted us</h2>
+          <h2 className="trusted__title">
+            They trusted us
+            <span className="trusted__title-sub"> / We worked with</span>
+          </h2>
           <ul className="trusted__grid" aria-label="Partenaires et licences">
-            {trustedNames.map((name) => (
-              <li key={name} className="trusted__cell">
-                <span>{name}</span>
+            {trustedBrands.map((brand) => (
+              <li
+                key={"key" in brand ? brand.key : brand.name}
+                className="trusted__cell"
+              >
+                <img src={brand.src} alt={brand.name} loading="lazy" />
               </li>
             ))}
           </ul>
