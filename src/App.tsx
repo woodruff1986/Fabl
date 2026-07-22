@@ -8,7 +8,82 @@ const navItems = [
   { href: "#ateliers", label: "Ateliers" },
   { href: "#conseil", label: "Conseil" },
   { href: "#persona", label: "Persona" },
+  { href: "#experiences", label: "Expériences" },
   { href: "#contact", label: "Contact" },
+] as const;
+
+type Experience = {
+  role: string;
+  project: string;
+  href?: string;
+  studio?: string;
+  platform: string;
+};
+
+const experiences: Experience[] = [
+  {
+    role: "Narrative Designer",
+    project: "Projet non annoncé",
+    studio: "Artefacts Studio",
+    platform: "PS5, Xbox, PC",
+  },
+  {
+    role: "Game / Narrative Designer",
+    project: "The Sandbox",
+    href: "https://www.sandbox.game/",
+    platform: "PC",
+  },
+  {
+    role: "Narrative Designer",
+    project: "Dune: Spice Wars",
+    href: "https://www.shirogames.com/dune-spice-wars",
+    studio: "Shiro Games",
+    platform: "PC",
+  },
+  {
+    role: "Game / Narrative Designer",
+    project: "Projet non annoncé",
+    studio: "Tap4Fun Paris",
+    platform: "F2P mobile",
+  },
+  {
+    role: "Game Designer / Narrative Designer",
+    project: "Love Stars",
+    href: "https://pocketstory.games/",
+    studio: "Pocket Story",
+    platform: "F2P mobile",
+  },
+  {
+    role: "Narrative Designer (Game Jams)",
+    project: "Projets narratifs en 48h",
+    platform: "Conquistador · Space Immo · Utopiales Game Jam",
+  },
+];
+
+const trustedNames = [
+  "Original Stormtrooper",
+  "Snoop Dogg",
+  "Shiro Games",
+  "The Walking Dead",
+  "tap4fun",
+  "The Sandbox",
+  "ISART Digital",
+  "pocketStory",
+  "SEPHORA",
+  "Warner Music Group",
+  "Paris Hilton",
+  "Artefacts Studio",
+  "Le Téléthon Cinéma",
+  ".double2",
+  "Dune",
+  "France 2",
+  "Hellfest",
+  "Atari",
+  "Le Petit Prince",
+  "Les Schtroumpfs",
+  "Brassart",
+  "Metallica",
+  "Nuclear Blast Records",
 ] as const;
 
 const creations = [
@@ -326,6 +401,40 @@ export default function App() {
             équipe, on épouse votre rythme, et on livre du concret : une
             narration sur mesure pour vous et vos joueurs.
           </p>
+        </Reveal>
+
+        <Reveal as="section" className="section experiences" id="experiences">
+          <p className="section__eyebrow">Parcours</p>
+          <h2 className="section__title">Expériences</h2>
+          <ul className="xp-list">
+            {experiences.map((item) => (
+              <li key={`${item.role}-${item.project}`} className="xp-list__item">
+                <p className="xp-list__role">{item.role}</p>
+                <p className="xp-list__project">
+                  {item.href ? (
+                    <a href={item.href} target="_blank" rel="noreferrer">
+                      {item.project}
+                    </a>
+                  ) : (
+                    item.project
+                  )}
+                  {item.studio ? ` · ${item.studio}` : null}
+                </p>
+                <p className="xp-list__platform">{item.platform}</p>
+              </li>
+            ))}
+          </ul>
+        </Reveal>
+
+        <Reveal as="section" className="section trusted" id="trusted">
+          <h2 className="trusted__title">They trusted us</h2>
+          <ul className="trusted__grid" aria-label="Partenaires et licences">
+            {trustedNames.map((name) => (
+              <li key={name} className="trusted__cell">
+                <span>{name}</span>
+              </li>
+            ))}
+          </ul>
         </Reveal>
 
         <Reveal as="section" className="section contact" id="contact">
