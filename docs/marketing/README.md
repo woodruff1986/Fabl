@@ -21,6 +21,7 @@ Pour la veille quotidienne : suivre manuellement la [watchlist](./watchlist-rese
 | [watchlist-reseaux.md](./watchlist-reseaux.md) | Comptes / auteurs à suivre légalement |
 | [sarah-beaulieu.md](./sarah-beaulieu.md) | Extraction site sarah-beaulieu.com (articles craft) |
 | [sites-craft.md](./sites-craft.md) | Catalogue d’autres sites ND / game writing |
+| [dossiers/INDEX.md](./dossiers/INDEX.md) | Extractions approfondies site par site |
 | [sources.json](./sources.json) | Catalogue machine-readable des sources |
 
 ## Mise à jour

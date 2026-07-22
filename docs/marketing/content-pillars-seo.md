@@ -61,6 +61,12 @@ Cible : studios, producers, lead designers FR/EN qui cherchent narrative design,
 14. « Un choix n’est pas une feature. C’est une promesse. »
 15. « Le bouton dit l’acte. La réplique est la conséquence. »
 16. « Story Architect : ce qui doit être vrai. Narrative Architect : le moteur qui le tient. »
+17. « Plant now. Water later. »
+18. « 90 / 9 / 1 — hub, diamant, cascade. »
+19. « Une fourchette n’est qu’une fourchette… jusqu’à ce qu’elle ne le soit plus. »
+20. « Chaque jeu parle sa propre langue narrative. »
+
+Banque complète : [dossiers/INDEX.md](./dossiers/INDEX.md).
 
 ## CTA alignés Fabl
 

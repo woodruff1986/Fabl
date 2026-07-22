@@ -4,7 +4,14 @@
   "scraping_policy": {
     "instagram": "forbidden_tos",
     "linkedin": "forbidden_tos_except_public_citations_via_search",
-    "allowed": ["public_blogs", "medium", "substack", "gamedeveloper", "author_sites", "indexed_public_posts"]
+    "allowed": [
+      "public_blogs",
+      "medium",
+      "substack",
+      "gamedeveloper",
+      "author_sites",
+      "indexed_public_posts"
+    ]
   },
   "sources": [
     {
@@ -13,7 +20,12 @@
       "author": "David Kuelz",
       "url": "https://www.gamedeveloper.com/design/narrative-design-tips-i-wish-i-d-known",
       "year": 2016,
-      "themes": ["verbs", "environmental_storytelling", "writing_as_feedback", "reactive_world"]
+      "themes": [
+        "verbs",
+        "environmental_storytelling",
+        "writing_as_feedback",
+        "reactive_world"
+      ]
     },
     {
       "id": "dinehart-architecture-2026",
@@ -21,7 +33,11 @@
       "author": "Stephen Erin Dinehart IV",
       "url": "https://narrativedesigner.com/blog/story-is-architecture.html",
       "year": 2026,
-      "themes": ["architecture", "mechanics_as_narrative", "production"]
+      "themes": [
+        "architecture",
+        "mechanics_as_narrative",
+        "production"
+      ]
     },
     {
       "id": "maggs-nd-101-2020",
@@ -29,7 +45,11 @@
       "author": "Brooke Maggs",
       "url": "https://medium.com/@brooke.maggs/the-art-of-video-game-narrative-design-101-c7a5f119d77",
       "year": 2020,
-      "themes": ["nd_vs_writer", "verbs_meaning", "player_experience"]
+      "themes": [
+        "nd_vs_writer",
+        "verbs_meaning",
+        "player_experience"
+      ]
     },
     {
       "id": "garrett-logistics-2026",
@@ -37,7 +57,11 @@
       "author": "Tomas Nyx Garrett",
       "url": "https://medium.com/@tomas.ca.garrett/narrative-design-is-a-logistics-problem-5c202b4b30a2",
       "year": 2026,
-      "themes": ["worldbuilding", "logistics", "world_candy"]
+      "themes": [
+        "worldbuilding",
+        "logistics",
+        "world_candy"
+      ]
     },
     {
       "id": "short-storylets-2019",
@@ -45,7 +69,11 @@
       "author": "Emily Short",
       "url": "https://emshort.blog/2019/11/29/storylets-you-want-them/",
       "year": 2019,
-      "themes": ["storylets", "structure", "procedural"]
+      "themes": [
+        "storylets",
+        "structure",
+        "procedural"
+      ]
     },
     {
       "id": "bender-sample-linkedin",
@@ -53,7 +81,11 @@
       "author": "Kelly Bender",
       "url": "https://www.linkedin.com/posts/kellybender17_narrativedesign-narrativedesigntip-gamewriter-activity-7430816564792229889-HBwK",
       "year": 2026,
-      "themes": ["hiring", "craft_constraints", "game_writing"]
+      "themes": [
+        "hiring",
+        "craft_constraints",
+        "game_writing"
+      ]
     },
     {
       "id": "narrative-news-day-in-life-2026",
@@ -61,7 +93,11 @@
       "author": "Narrative News",
       "url": "https://narrativenews.substack.com/p/a-day-in-the-life-of-a-narrative",
       "year": 2026,
-      "themes": ["briefs", "pillars", "production"]
+      "themes": [
+        "briefs",
+        "pillars",
+        "production"
+      ]
     },
     {
       "id": "celtx-game-script",
@@ -69,7 +105,11 @@
       "author": "Celtx Blog",
       "url": "https://blog.celtx.com/how-to-write-a-video-game-script/",
       "year": null,
-      "themes": ["script_structure", "branching", "with_the_player"]
+      "themes": [
+        "script_structure",
+        "branching",
+        "with_the_player"
+      ]
     },
     {
       "id": "the-narrative-designer-what-is",
@@ -77,7 +117,10 @@
       "author": "The Narrative Designer",
       "url": "https://www.the-narrative-designer.com/what-is-narrative-design/",
       "year": null,
-      "themes": ["definition", "narrative_language"]
+      "themes": [
+        "definition",
+        "narrative_language"
+      ]
     },
     {
       "id": "beaulieu-faq-2023",
@@ -85,7 +128,11 @@
       "author": "Sarah Beaulieu",
       "url": "https://sarah-beaulieu.com/en/faq-writers-narrative-designers-video-games",
       "year": 2023,
-      "themes": ["nd_vs_writer", "portfolio", "career"]
+      "themes": [
+        "nd_vs_writer",
+        "portfolio",
+        "career"
+      ]
     },
     {
       "id": "beaulieu-mechanics-narrative-2024",
@@ -93,7 +140,12 @@
       "author": "Sarah Beaulieu",
       "url": "https://sarah-beaulieu.com/en/enhancing-the-game-experience-by-reuniting-mechanics-and-narrative",
       "year": 2024,
-      "themes": ["mechanics", "emotion", "player_input", "environmental_storytelling"]
+      "themes": [
+        "mechanics",
+        "emotion",
+        "player_input",
+        "environmental_storytelling"
+      ]
     },
     {
       "id": "beaulieu-barks-2020",
@@ -101,7 +153,12 @@
       "author": "Sarah Beaulieu",
       "url": "https://sarah-beaulieu.com/en/writing-barks-for-video-games",
       "year": 2020,
-      "themes": ["barks", "lore", "characterization", "narrative_potential"]
+      "themes": [
+        "barks",
+        "lore",
+        "characterization",
+        "narrative_potential"
+      ]
     },
     {
       "id": "beaulieu-narrative-potential-2021",
@@ -109,7 +166,11 @@
       "author": "Sarah Beaulieu",
       "url": "https://sarah-beaulieu.com/en/off-script",
       "year": 2021,
-      "themes": ["narrative_potential", "evocation", "microfiction"]
+      "themes": [
+        "narrative_potential",
+        "evocation",
+        "microfiction"
+      ]
     },
     {
       "id": "beaulieu-measure-info-2021",
@@ -117,7 +178,12 @@
       "author": "Sarah Beaulieu",
       "url": "https://sarah-beaulieu.com/en/how-to-measure-information-in-a-plot",
       "year": 2021,
-      "themes": ["plot", "exposition", "characterization", "pacing"]
+      "themes": [
+        "plot",
+        "exposition",
+        "characterization",
+        "pacing"
+      ]
     },
     {
       "id": "beaulieu-site-home",
@@ -125,7 +191,11 @@
       "author": "Sarah Beaulieu",
       "url": "https://sarah-beaulieu.com/",
       "year": null,
-      "themes": ["profile", "worldbuilding", "script_doctor"]
+      "themes": [
+        "profile",
+        "worldbuilding",
+        "script_doctor"
+      ]
     },
     {
       "id": "atozi-blog",
@@ -133,7 +203,11 @@
       "author": "Antonin Demeilliez",
       "url": "https://atozi.blog/",
       "year": null,
-      "themes": ["structure", "indie_nd", "french"]
+      "themes": [
+        "structure",
+        "indie_nd",
+        "french"
+      ]
     },
     {
       "id": "atozi-frog-detective",
@@ -141,7 +215,11 @@
       "author": "Antonin Demeilliez",
       "url": "https://atozi.blog/blog/frog/",
       "year": 2024,
-      "themes": ["structure", "feeling", "investigation"]
+      "themes": [
+        "structure",
+        "feeling",
+        "investigation"
+      ]
     },
     {
       "id": "dinehart-meaningful-choices",
@@ -149,7 +227,11 @@
       "author": "Stephen Erin Dinehart IV",
       "url": "https://narrativedesigner.com/blog/meaningful-choices.html",
       "year": 2026,
-      "themes": ["choices", "agency", "consequence"]
+      "themes": [
+        "choices",
+        "agency",
+        "consequence"
+      ]
     },
     {
       "id": "priestley-architects-2026",
@@ -157,7 +239,11 @@
       "author": "Theo Priestley",
       "url": "https://theopriestley.net/2026/05/01/story-architect-narrative-architect/",
       "year": 2026,
-      "themes": ["roles", "worldbuilding", "systems"]
+      "themes": [
+        "roles",
+        "worldbuilding",
+        "systems"
+      ]
     },
     {
       "id": "lebreton-manuel-nd",
@@ -165,7 +251,11 @@
       "author": "Ronan Le Breton",
       "url": "https://ronanlebreton.com/je-finis-ecrire-manuel-narrative-design/",
       "year": null,
-      "themes": ["definition", "french", "pedagogy"]
+      "themes": [
+        "definition",
+        "french",
+        "pedagogy"
+      ]
     },
     {
       "id": "storyflow-branching-dialogue",
@@ -173,7 +263,11 @@
       "author": "Storyflow",
       "url": "https://storyflow-editor.com/blog/how-to-write-branching-dialogue/",
       "year": 2026,
-      "themes": ["branching", "dialogue", "choice_copy"]
+      "themes": [
+        "branching",
+        "dialogue",
+        "choice_copy"
+      ]
     },
     {
       "id": "nicklin-writing-for-games",
@@ -181,7 +275,11 @@
       "author": "Hannah Nicklin",
       "url": "https://www.writingfor.games/",
       "year": null,
-      "themes": ["craft", "indie", "theory"]
+      "themes": [
+        "craft",
+        "indie",
+        "theory"
+      ]
     },
     {
       "id": "short-nd-blogs-list",
@@ -189,7 +287,186 @@
       "author": "Emily Short",
       "url": "https://emshort.blog/2019/06/18/narrative-design-related-blogs/",
       "year": 2019,
-      "themes": ["directory", "watchlist"]
+      "themes": [
+        "directory",
+        "watchlist"
+      ]
+    },
+    {
+      "id": "atozi-planescape",
+      "title": "Planescape Torment : La boîte de skinner narrative",
+      "author": "Antonin Demeilliez",
+      "url": "https://atozi.blog/blog/planescape/planescape-torment/",
+      "year": 2024,
+      "themes": [
+        "verbs",
+        "skinner",
+        "dialogue"
+      ]
+    },
+    {
+      "id": "atozi-firebird",
+      "title": "Firebird : le cerbère de la porte",
+      "author": "Antonin Demeilliez",
+      "url": "https://atozi.blog/blog/firebird/",
+      "year": 2024,
+      "themes": [
+        "structure",
+        "resources",
+        "pacing"
+      ]
+    },
+    {
+      "id": "atozi-baladins",
+      "title": "Baladins: narration procédurale interdite",
+      "author": "Antonin Demeilliez",
+      "url": "https://atozi.blog/blog/baladins1/",
+      "year": 2025,
+      "themes": [
+        "procedural",
+        "voice",
+        "worldbuilding"
+      ]
+    },
+    {
+      "id": "dinehart-what-is-nd",
+      "title": "What Is Narrative Design? — The Definitive Guide",
+      "author": "Stephen Erin Dinehart IV",
+      "url": "https://narrativedesigner.com/what-is-nd.html",
+      "year": 2026,
+      "themes": [
+        "definition",
+        "history",
+        "roles"
+      ]
+    },
+    {
+      "id": "priestley-objects",
+      "title": "Why You Should Treat Every Game Object as a Character",
+      "author": "Theo Priestley",
+      "url": "https://theopriestley.net/2026/04/29/every-game-object-is-a-character/",
+      "year": 2026,
+      "themes": [
+        "worldbuilding",
+        "objects",
+        "env_story"
+      ]
+    },
+    {
+      "id": "lebreton-histoire-scenario",
+      "title": "Distinguer narration, histoire et scénario",
+      "author": "Ronan Le Breton",
+      "url": "https://ronanlebreton.com/ecriture-distinguer-entre-narration-histoire-scenario/",
+      "year": null,
+      "themes": [
+        "definitions",
+        "french"
+      ]
+    },
+    {
+      "id": "lebreton-interaction",
+      "title": "Interaction et Narration dans le jeu vidéo",
+      "author": "Ronan Le Breton",
+      "url": "https://ronanlebreton.com/interaction-interaction-jeu-video-irreconciliable/",
+      "year": null,
+      "themes": [
+        "ludonarrative",
+        "intention"
+      ]
+    },
+    {
+      "id": "short-beyond-branching",
+      "title": "Beyond Branching: Quality-Based, Salience-Based, and Waypoint",
+      "author": "Emily Short",
+      "url": "https://emshort.blog/2016/04/12/beyond-branching-quality-based-and-salience-based-narrative-structures/",
+      "year": 2016,
+      "themes": [
+        "qbn",
+        "storylets",
+        "structure"
+      ]
+    },
+    {
+      "id": "short-storylets-together",
+      "title": "Storylets Play Together",
+      "author": "Emily Short",
+      "url": "https://emshort.blog/2019/12/03/storylets-play-together/",
+      "year": 2019,
+      "themes": [
+        "storylets",
+        "systems"
+      ]
+    },
+    {
+      "id": "strayspark-dialogue-trees",
+      "title": "Designing Dialogue Trees That Don't Suck",
+      "author": "StraySpark",
+      "url": "https://www.strayspark.studio/blog/designing-dialogue-trees-branching-narrative",
+      "year": null,
+      "themes": [
+        "branching",
+        "hub_spoke",
+        "npc_memory"
+      ]
+    },
+    {
+      "id": "solana-nd-guide",
+      "title": "Game Narrative Design Explained",
+      "author": "Solana Garden",
+      "url": "https://solana.garden/guides/game-narrative-design-explained/",
+      "year": null,
+      "themes": [
+        "overview",
+        "ludonarrative",
+        "production"
+      ]
+    },
+    {
+      "id": "finley-contrary-1",
+      "title": "Contrary Game Design Part One",
+      "author": "Toiya Kristen Finley",
+      "url": "https://www.toiyakfinley.com/post/2016-1-27-contrary-game-design-subverting-player-expectations-part-one-mechanics-are-clich%C3%A9s-too",
+      "year": 2016,
+      "themes": [
+        "contrary",
+        "expectations"
+      ]
+    },
+    {
+      "id": "finley-player-heart",
+      "title": "Keeping the Player at the Heart of the Story",
+      "author": "Toiya Kristen Finley",
+      "url": "https://www.toiyakfinley.com/post/2018/03/14/keeping-the-player-at-the-heart-of-the-story",
+      "year": 2018,
+      "themes": [
+        "agency",
+        "mobile",
+        "imagination"
+      ]
+    },
+    {
+      "id": "tnd-what-is",
+      "title": "What is Narrative Design? (The Narrative Designer)",
+      "author": "The Narrative Designer",
+      "url": "https://www.the-narrative-designer.com/what-is-narrative-design/",
+      "year": null,
+      "themes": [
+        "definition",
+        "witcher",
+        "narrative_language"
+      ]
+    },
+    {
+      "id": "nicklin-wfg",
+      "title": "Writing for Games: Theory & Practice (site)",
+      "author": "Hannah Nicklin",
+      "url": "https://www.writingfor.games/",
+      "year": null,
+      "themes": [
+        "craft",
+        "indie",
+        "book"
+      ]
     }
   ],
   "watchlist_linkedin": [

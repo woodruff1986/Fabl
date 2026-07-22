@@ -103,8 +103,6 @@ ND définit *comment* les briques narratives arrivent (texte, son, image, objets
 
 ## Prochaine passe
 
-1. Extraire 2–3 articles Atozi supplémentaires (Planescape, Baladins)  
-2. Page Hannah Nicklin / extraits *Writing for Games*  
-3. Sam Kabo Ashwell — patterns CYOA  
-4. Jon Ingold — Heaven’s Vault dynamic dialogue  
-5. Articles FR Cosmo Orbus liés ND
+Voir extractions détaillées : [dossiers/INDEX.md](./dossiers/INDEX.md).
+
+Optionnel : Arcane/Avowed/Swansong (Atozi), PDF Hannah Nicklin, Sam Kabo Ashwell patterns, Jon Ingold Heaven’s Vault.
