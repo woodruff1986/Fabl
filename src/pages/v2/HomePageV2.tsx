@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { AcastEmbed } from "../../components/AcastEmbed";
 import { Reveal } from "../../components/Reveal";
 import { V2Shell } from "../../components/v2/V2Shell";
 import { experiences, trustedBrands } from "../../data/portfolio";
@@ -9,8 +8,6 @@ const navItems = [
   { href: "#services", label: "Services" },
   { href: "#enseignement", label: "Enseignement" },
   { href: "#experiences", label: "Expériences" },
-  { href: "#persona", label: "Persona" },
-  { href: "/v2/podcast", label: "Podcast" },
 ] as const;
 
 const creations = [
@@ -365,37 +362,6 @@ export default function HomePageV2() {
               </li>
             ))}
           </ul>
-        </Reveal>
-
-        <Reveal as="section" className="v2-section v2-section--soft" id="persona">
-          <p className="v2-kicker">La salle d'écriture au micro</p>
-          <h2 className="v2-title">
-            Podcast <em>Persona</em>
-          </h2>
-          <div className="v2-persona">
-            <div>
-              <p className="v2-lede">
-                Chaque épisode, on désosse un personnage de fiction jusqu'à
-                l'os. Ses failles, ses biais, sa mécanique intime.
-              </p>
-              <p className="v2-lede">
-                Pas de cours magistral : un ping-pong instinctif, vivant,
-                argumenté. Notre façon de vous montrer comment on réfléchit,
-                semaine après semaine.
-              </p>
-              <p className="v2-persona__quote">
-                Désosser un personnage jusqu'à l'os.
-              </p>
-              <p className="v2-persona__meta">Écoute · Analyse · Transmission</p>
-              <div className="v2-persona__actions">
-                <Link className="v2-btn v2-btn--pulse" to="/v2/podcast">
-                  <ArrowUpRight />
-                  Page podcast
-                </Link>
-              </div>
-            </div>
-            <AcastEmbed className="acast-embed" height={300} />
-          </div>
         </Reveal>
 
         <section className="v2-section v2-section--flush v2-section--dark" id="contact">

@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-import { AcastEmbed } from "../components/AcastEmbed";
 import { Reveal } from "../components/Reveal";
 import { SiteShell } from "../components/SiteShell";
 import { experiences, trustedBrands } from "../data/portfolio";
@@ -13,7 +11,6 @@ const navItems = [
   { href: "#enseignement", label: "Enseignement" },
   { href: "#trusted", label: "They trusted us" },
   { href: "#experiences", label: "Expériences" },
-  { href: "#persona", label: "Persona" },
   { href: "#contact", label: "Contact" },
 ] as const;
 
@@ -313,32 +310,6 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
-        </Reveal>
-
-        <Reveal as="section" className="section" id="persona">
-          <p className="section__eyebrow">La salle d'écriture au micro</p>
-          <h2 className="section__title">Podcast Persona</h2>
-          <div className="persona">
-            <p>
-              Chaque épisode, on désosse un personnage de fiction jusqu'à
-              l'os. Ses failles, ses biais, sa mécanique intime.
-            </p>
-            <p>
-              Pas de cours magistral : un ping-pong instinctif, vivant,
-              argumenté. Notre façon de vous montrer comment on réfléchit,
-              semaine après semaine.
-            </p>
-            <p className="persona__quote">
-              Désosser un personnage jusqu'à l'os.
-            </p>
-            <p className="persona__meta">Écoute · Analyse · Transmission</p>
-          </div>
-          <AcastEmbed className="acast-embed acast-embed--home" height={300} />
-          <div className="persona__actions">
-            <Link className="btn btn--fill" to="/podcast">
-              Voir la page podcast
-            </Link>
-          </div>
         </Reveal>
 
         <Reveal as="section" className="section contact" id="contact">

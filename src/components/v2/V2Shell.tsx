@@ -162,14 +162,6 @@ export function V2Shell({
         <span>Studio de narrative design</span>
         <div className="v2-footer__links">
           <Link to="/">V1</Link>
-          <Link to="/v2/podcast">Podcast</Link>
-          <a
-            href="https://shows.acast.com/persona"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Acast
-          </a>
         </div>
       </footer>
     </div>
