@@ -1,5 +1,6 @@
 import { useEffect, useId, useState, type ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { withBase } from "../lib/base";
 
 export type NavItem = {
   href: string;
@@ -12,10 +13,16 @@ type SiteShellProps = {
 };
 
 function resolveHref(href: string, pathname: string) {
-  if (href.startsWith("#") && pathname !== "/") {
-    return `/${href}`;
+  if (href.startsWith("#")) {
+    if (pathname !== "/") return withBase(`/${href}`);
+    return href;
   }
+  if (href.includes("#")) return withBase(href);
   return href;
+}
+
+function isRouterPath(href: string) {
+  return href.startsWith("/") && !href.includes("#");
 }
 
 export function SiteShell({ navItems, children }: SiteShellProps) {
@@ -40,7 +47,7 @@ export function SiteShell({ navItems, children }: SiteShellProps) {
         <nav className="topbar__side" aria-label="Navigation">
           {navItems.map((item) => {
             const href = resolveHref(item.href, pathname);
-            return href.startsWith("/") && !href.startsWith("/#") ? (
+            return isRouterPath(href) ? (
               <Link key={item.href} to={href}>
                 {item.label}
               </Link>
@@ -83,7 +90,7 @@ export function SiteShell({ navItems, children }: SiteShellProps) {
         <nav className="menu__list">
           {navItems.map((item) => {
             const href = resolveHref(item.href, pathname);
-            return href.startsWith("/") && !href.startsWith("/#") ? (
+            return isRouterPath(href) ? (
               <Link key={item.href} to={href} onClick={closeMenu}>
                 <span className="menu__title">{item.label}</span>
               </Link>

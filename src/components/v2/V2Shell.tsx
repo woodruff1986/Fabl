@@ -1,5 +1,6 @@
 import { useEffect, useId, useState, type ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { withBase } from "../../lib/base";
 
 export type V2NavItem = {
   href: string;
@@ -28,8 +29,9 @@ function LogoMark() {
 
 function resolveHref(href: string, pathname: string) {
   if (href.startsWith("#")) {
-    return pathname === "/v2" ? href : `/v2${href}`;
+    return pathname === "/v2" ? href : withBase(`/v2${href}`);
   }
+  if (href.includes("#")) return withBase(href);
   return href;
 }
 

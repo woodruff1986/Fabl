@@ -86,7 +86,7 @@ export default function PodcastPageV2() {
             >
               Ouvrir le profil Acast
             </a>
-            <Link className="v2-btn v2-btn--ghost" to="/v2#persona">
+            <Link className="v2-btn v2-btn--ghost" to={{ pathname: "/v2", hash: "persona" }}>
               Retour V2
             </Link>
           </div>
