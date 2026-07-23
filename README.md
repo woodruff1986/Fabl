@@ -1,6 +1,17 @@
-# Fabl
+# Fabl-site
 
-Site de présentation du studio de narrative design **Fabl**.
+Site officiel du studio de narrative design **Fabl**, hébergé via GitHub Pages.
+
+**URL :** https://woodruff1986.github.io/Fabl-site/
+
+## Contenu du dépôt
+
+- `src/` — application Vite + React (V1 + V2)
+- `public/` — assets (logos partenaires, vignettes expériences)
+- `docs/Fabl-textes-site.docx` — textes sources du site
+- `docs/marketing/` — base de connaissance SEO / craft narrative design
+- `docs/brand/` — planches logo & typographie
+- `docs/screenshots/` — captures de référence
 
 ## Développement
 
@@ -15,24 +26,14 @@ npm run dev
 npm run build
 ```
 
-## Hébergement GitHub Pages
+## Hébergement
 
-Le site est publié sur la branche `gh-pages`.
+Déploiement automatique sur la branche `gh-pages` à chaque push sur `main`
+(`.github/workflows/deploy-pages.yml`).
 
-**URL :** https://woodruff1986.github.io/Fabl/
+Activer Pages : Settings → Pages → Source = Deploy from a branch → Branch `gh-pages` / root.
 
-### Activation (une fois dans GitHub)
-
-1. Repo → **Settings** → **Pages**
-2. **Build and deployment** → Source : **Deploy from a branch**
-3. Branch : **`gh-pages`** / folder **`/`** (root)
-4. Save
-
-Le workflow Actions redéploie `gh-pages` à chaque push sur `main`.
-
-> Si le dépôt est **privé**, GitHub Pages nécessite un plan Pro/Team,
-> ou passez le dépôt en **public**.
-
-- V1 : `/`
-- V2 : `/v2`
-- Podcast : `/podcast` · `/v2/podcast`
+Routes :
+- `/` — V1
+- `/v2` — V2 (direction visuelle type inodes.ai)
+- `/podcast` · `/v2/podcast`

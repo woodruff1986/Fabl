@@ -1,8 +1,8 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// Project Pages URL: https://woodruff1986.github.io/Fabl/
-const base = process.env.GITHUB_ACTIONS === "true" ? "/Fabl/" : "/";
+// Project Pages URL: https://woodruff1986.github.io/Fabl-site/
+const base = process.env.GITHUB_ACTIONS === "true" ? "/Fabl-site/" : "/";
 
 export default defineConfig({
   base,
