@@ -1,3 +1,4 @@
+import { ContactForm } from "../components/ContactForm";
 import { Reveal } from "../components/Reveal";
 import { SiteShell } from "../components/SiteShell";
 import { CONTACT_EMAIL, contactMailto } from "../data/contact";
@@ -318,13 +319,11 @@ export default function HomePage() {
           <h2 className="section__title">Parlons de votre jeu</h2>
           <p className="section__lede">
             Une pré-prod à lancer, un dialogue à affûter, un atelier à
-            organiser ? Écrivez-nous à{" "}
+            organiser ? Laissez-nous un message — ou écrivez à{" "}
             <a href={contactMailto}>{CONTACT_EMAIL}</a>.
           </p>
-          <div className="persona__actions">
-            <a className="btn btn--fill" href={contactMailto}>
-              Écrire à Fabl
-            </a>
+          <ContactForm variant="v1" />
+          <div className="persona__actions contact__secondary">
             <a className="btn btn--ghost" href="#prestations">
               Revoir les prestations
             </a>

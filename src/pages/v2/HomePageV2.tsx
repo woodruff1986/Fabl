@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { ContactForm } from "../../components/ContactForm";
 import { Reveal } from "../../components/Reveal";
 import { V2Shell } from "../../components/v2/V2Shell";
 import { CONTACT_EMAIL, contactMailto } from "../../data/contact";
@@ -374,14 +375,11 @@ export default function HomePageV2() {
               </h2>
               <p className="v2-lede">
                 Une pré-prod à lancer, un dialogue à affûter, un atelier à
-                organiser ? Écrivez-nous à{" "}
+                organiser ? Laissez-nous un message — ou écrivez à{" "}
                 <a href={contactMailto}>{CONTACT_EMAIL}</a>.
               </p>
+              <ContactForm variant="v2" />
               <div className="v2-contact__actions">
-                <a className="v2-btn v2-btn--pulse" href={contactMailto}>
-                  <ArrowUpRight />
-                  Écrire à Fabl
-                </a>
                 <a className="v2-btn v2-btn--ghost-light" href="#prestations">
                   Revoir les prestations
                 </a>
