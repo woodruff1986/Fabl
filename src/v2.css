@@ -802,7 +802,15 @@
   flex-wrap: wrap;
   gap: 0.65rem;
   margin-top: 1.75rem;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.v2-contact__actions-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-left: auto;
 }
 
 .v2 .contact-form--v2 {

@@ -380,12 +380,17 @@ export default function HomePageV2() {
               </p>
               <ContactForm variant="v2" />
               <div className="v2-contact__actions">
-                <a className="v2-btn v2-btn--ghost-light" href="#prestations">
-                  Revoir les prestations
+                <a className="v2-btn v2-btn--ghost-light" href={contactMailto}>
+                  Écrire à Fabl
                 </a>
-                <Link className="v2-btn v2-btn--ghost-light" to="/">
-                  Voir la V1
-                </Link>
+                <div className="v2-contact__actions-right">
+                  <a className="v2-btn v2-btn--ghost-light" href="#prestations">
+                    Revoir les prestations
+                  </a>
+                  <Link className="v2-btn v2-btn--ghost-light" to="/">
+                    Voir la V1
+                  </Link>
+                </div>
               </div>
             </Reveal>
           </div>

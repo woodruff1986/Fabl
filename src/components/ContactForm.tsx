@@ -105,15 +105,6 @@ export function ContactForm({ variant = "v1" }: ContactFormProps) {
       </div>
 
       <div className="contact-form__footer">
-        <p className="contact-form__hint" role="status" aria-live="polite">
-          {status === "sending"
-            ? "Envoi en cours…"
-            : status === "ok"
-              ? "Message envoyé — merci, nous vous répondrons rapidement."
-              : status === "error"
-                ? "Si rien ne s’ouvre, écrivez-nous directement à l’adresse ci-dessus."
-                : `Réponse à ${CONTACT_EMAIL}`}
-        </p>
         <button
           className={
             variant === "v2"
@@ -125,6 +116,15 @@ export function ContactForm({ variant = "v1" }: ContactFormProps) {
         >
           {status === "sending" ? "Envoi…" : "Envoyer"}
         </button>
+        <p className="contact-form__hint" role="status" aria-live="polite">
+          {status === "sending"
+            ? "Envoi en cours…"
+            : status === "ok"
+              ? "Message envoyé — merci, nous vous répondrons rapidement."
+              : status === "error"
+                ? "Si rien ne s’ouvre, écrivez-nous directement à l’adresse ci-dessus."
+                : `Réponse à ${CONTACT_EMAIL}`}
+        </p>
       </div>
     </form>
   );

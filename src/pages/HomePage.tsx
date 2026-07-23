@@ -324,6 +324,9 @@ export default function HomePage() {
           </p>
           <ContactForm variant="v1" />
           <div className="persona__actions contact__secondary">
+            <a className="btn btn--ghost" href={contactMailto}>
+              Écrire à Fabl
+            </a>
             <a className="btn btn--ghost" href="#prestations">
               Revoir les prestations
             </a>
