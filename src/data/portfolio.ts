@@ -22,7 +22,7 @@ export const experiences: Experience[] = [
     project: "The Sandbox",
     href: "https://www.sandbox.game/",
     platform: "PC",
-    image: withBase("/images/experiences/sandbox-cover.jpg"),
+    image: withBase("/images/experiences/sandbox-cover.png"),
   },
   {
     role: "Narrative Designer",
