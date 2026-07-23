@@ -759,6 +759,14 @@ button {
   margin-top: 1.5rem;
 }
 
+.contact .persona__actions {
+  justify-content: flex-end;
+}
+
+.contact .persona__actions .btn {
+  margin-top: 0;
+}
+
 .footer {
   display: flex;
   flex-wrap: wrap;
