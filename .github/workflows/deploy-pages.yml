@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - cursor/github-pages-live-a9ad
   workflow_dispatch:
 
 permissions:
