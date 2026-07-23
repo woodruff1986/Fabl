@@ -2,15 +2,17 @@
 
 Site du studio de narrative design **Fabl**.
 
-**URL GitHub Pages :** https://woodruff1986.github.io/Fabl/
+**URL :** https://woodruff1986.github.io/Fabl/
 
-## Dev
+## Développement
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Build / Pages
+## GitHub Pages
 
-Déploiement via branche `gh-pages` (workflow `.github/workflows/deploy-pages.yml`).
+Déploiement automatique vers la branche `gh-pages` (workflow `.github/workflows/deploy-pages.yml`).
+
+Activer : Settings → Pages → Source = Deploy from a branch → Branch **`gh-pages`** / root.
