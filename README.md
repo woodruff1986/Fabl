@@ -15,24 +15,24 @@ npm run dev
 npm run build
 ```
 
-Sortie dans `dist/`.
-
 ## Hébergement GitHub Pages
 
-Le site est déployé automatiquement sur GitHub Pages à chaque push sur `main`
-(workflow `.github/workflows/deploy-pages.yml`).
+Le site est publié sur la branche `gh-pages`.
 
-URL attendue :
+**URL :** https://woodruff1986.github.io/Fabl/
 
-**https://woodruff1986.github.io/Fabl/**
-
-### Première activation
+### Activation (une fois dans GitHub)
 
 1. Repo → **Settings** → **Pages**
-2. Source : **GitHub Actions**
-3. Merger sur `main` (ou lancer le workflow manuellement via **Actions**)
+2. **Build and deployment** → Source : **Deploy from a branch**
+3. Branch : **`gh-pages`** / folder **`/`** (root)
+4. Save
 
-> Si le dépôt est **privé**, GitHub Pages nécessite un plan Pro/Team, ou
-> passez le dépôt en public.
+Le workflow Actions redéploie `gh-pages` à chaque push sur `main`.
 
-V2 du site : `/v2` — Podcast : `/podcast` et `/v2/podcast`
+> Si le dépôt est **privé**, GitHub Pages nécessite un plan Pro/Team,
+> ou passez le dépôt en **public**.
+
+- V1 : `/`
+- V2 : `/v2`
+- Podcast : `/podcast` · `/v2/podcast`
