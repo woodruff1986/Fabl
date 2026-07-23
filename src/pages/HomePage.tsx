@@ -1,5 +1,6 @@
 import { Reveal } from "../components/Reveal";
 import { SiteShell } from "../components/SiteShell";
+import { CONTACT_EMAIL, contactMailto } from "../data/contact";
 import { experiences, trustedBrands } from "../data/portfolio";
 
 const navItems = [
@@ -317,11 +318,17 @@ export default function HomePage() {
           <h2 className="section__title">Parlons de votre jeu</h2>
           <p className="section__lede">
             Une pré-prod à lancer, un dialogue à affûter, un atelier à
-            organiser ? Écrivez-nous.
+            organiser ? Écrivez-nous à{" "}
+            <a href={contactMailto}>{CONTACT_EMAIL}</a>.
           </p>
-          <a className="btn btn--fill" href="#prestations">
-            Revoir les prestations
-          </a>
+          <div className="persona__actions">
+            <a className="btn btn--fill" href={contactMailto}>
+              Écrire à Fabl
+            </a>
+            <a className="btn btn--ghost" href="#prestations">
+              Revoir les prestations
+            </a>
+          </div>
         </Reveal>
       </main>
     </SiteShell>

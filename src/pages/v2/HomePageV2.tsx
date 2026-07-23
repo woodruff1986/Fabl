@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Reveal } from "../../components/Reveal";
 import { V2Shell } from "../../components/v2/V2Shell";
+import { CONTACT_EMAIL, contactMailto } from "../../data/contact";
 import { experiences, trustedBrands } from "../../data/portfolio";
 
 const navItems = [
@@ -373,11 +374,15 @@ export default function HomePageV2() {
               </h2>
               <p className="v2-lede">
                 Une pré-prod à lancer, un dialogue à affûter, un atelier à
-                organiser ? Écrivez-nous.
+                organiser ? Écrivez-nous à{" "}
+                <a href={contactMailto}>{CONTACT_EMAIL}</a>.
               </p>
               <div className="v2-contact__actions">
-                <a className="v2-btn v2-btn--pulse" href="#prestations">
+                <a className="v2-btn v2-btn--pulse" href={contactMailto}>
                   <ArrowUpRight />
+                  Écrire à Fabl
+                </a>
+                <a className="v2-btn v2-btn--ghost-light" href="#prestations">
                   Revoir les prestations
                 </a>
                 <Link className="v2-btn v2-btn--ghost-light" to="/">
