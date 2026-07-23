@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { AcastEmbed } from "../components/AcastEmbed";
 import { Reveal } from "../components/Reveal";
 import { SiteShell } from "../components/SiteShell";
+import { experiences, trustedBrands } from "../data/portfolio";
 
 const navItems = [
   { href: "#prestations", label: "Prestations" },
@@ -16,86 +17,10 @@ const navItems = [
   { href: "#contact", label: "Contact" },
 ] as const;
 
-
-type Experience = {
-  role: string;
-  project: string;
-  href?: string;
-  studio?: string;
-  platform: string;
-};
-
-const experiences: Experience[] = [
-  {
-    role: "Narrative Designer",
-    project: "Projet non annoncé",
-    studio: "Artefacts Studio",
-    platform: "PS5, Xbox, PC",
-  },
-  {
-    role: "Game / Narrative Designer",
-    project: "The Sandbox",
-    href: "https://www.sandbox.game/",
-    platform: "PC",
-  },
-  {
-    role: "Narrative Designer",
-    project: "Dune: Spice Wars",
-    href: "https://www.shirogames.com/dune-spice-wars",
-    studio: "Shiro Games",
-    platform: "PC",
-  },
-  {
-    role: "Game / Narrative Designer",
-    project: "Projet non annoncé",
-    studio: "Tap4Fun Paris",
-    platform: "F2P mobile",
-  },
-  {
-    role: "Game Designer / Narrative Designer",
-    project: "Love Stars",
-    href: "https://pocketstory.games/",
-    studio: "Pocket Story",
-    platform: "F2P mobile",
-  },
-  {
-    role: "Narrative Designer (Game Jams)",
-    project: "Projets narratifs en 48h",
-    platform: "Conquistador · Space Immo · Utopiales Game Jam",
-  },
-];
-
 const teaching = [
   "Intervenant à ISART Digital (depuis 2024)",
   "Formateur en Narrative Design (Artwork-VFX)",
   "Professeur en Narrative Design / Scénario (Brassart)",
-] as const;
-
-const trustedBrands = [
-  { name: "Original Stormtrooper", src: "/images/trusted/original-stormtrooper.svg" },
-  { name: "Snoop Dogg", src: "/images/trusted/snoop-dogg.svg" },
-  { name: "Shiro Games", src: "/images/trusted/shiro-games.svg" },
-  { name: "The Walking Dead", src: "/images/trusted/walking-dead.svg" },
-  { name: "tap4fun", src: "/images/trusted/tap4fun.svg" },
-  { name: "The Sandbox", src: "/images/trusted/sandbox.svg" },
-  { name: "ISART Digital", src: "/images/trusted/isart.svg" },
-  { name: "tap4fun", src: "/images/trusted/tap4fun-text.svg", key: "tap4fun-alt" },
-  { name: "pocketStory", src: "/images/trusted/pocketstory.svg" },
-  { name: "SEPHORA", src: "/images/trusted/sephora.svg" },
-  { name: "Warner Music Group", src: "/images/trusted/warner.svg" },
-  { name: "Paris Hilton", src: "/images/trusted/paris-hilton.svg" },
-  { name: "Artefacts Studio", src: "/images/trusted/artefacts.svg" },
-  { name: "Le Téléthon Cinéma", src: "/images/trusted/telethon.svg" },
-  { name: ".double2", src: "/images/trusted/double2.svg" },
-  { name: "Dune", src: "/images/trusted/dune.svg" },
-  { name: "France 2", src: "/images/trusted/france2.svg" },
-  { name: "Hellfest", src: "/images/trusted/hellfest.svg" },
-  { name: "Atari", src: "/images/trusted/atari.svg" },
-  { name: "Le Petit Prince", src: "/images/trusted/petit-prince.svg" },
-  { name: "Les Schtroumpfs", src: "/images/trusted/schtroumpfs.svg" },
-  { name: "Brassart", src: "/images/trusted/brassart.svg" },
-  { name: "Metallica", src: "/images/trusted/metallica.svg" },
-  { name: "Nuclear Blast Records", src: "/images/trusted/nuclear-blast.svg" },
 ] as const;
 
 const creations = [
@@ -366,18 +291,25 @@ export default function HomePage() {
           <ul className="xp-list">
             {experiences.map((item) => (
               <li key={`${item.role}-${item.project}`} className="xp-list__item">
-                <p className="xp-list__role">{item.role}</p>
-                <p className="xp-list__project">
-                  {item.href ? (
-                    <a href={item.href} target="_blank" rel="noreferrer">
-                      {item.project}
-                    </a>
-                  ) : (
-                    item.project
-                  )}
-                  {item.studio ? ` · ${item.studio}` : null}
-                </p>
-                <p className="xp-list__platform">{item.platform}</p>
+                {item.image ? (
+                  <div className="xp-list__media">
+                    <img src={item.image} alt="" loading="lazy" />
+                  </div>
+                ) : null}
+                <div className="xp-list__body">
+                  <p className="xp-list__role">{item.role}</p>
+                  <p className="xp-list__project">
+                    {item.href ? (
+                      <a href={item.href} target="_blank" rel="noreferrer">
+                        {item.project}
+                      </a>
+                    ) : (
+                      item.project
+                    )}
+                    {item.studio ? ` · ${item.studio}` : null}
+                  </p>
+                  <p className="xp-list__platform">{item.platform}</p>
+                </div>
               </li>
             ))}
           </ul>

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { AcastEmbed } from "../../components/AcastEmbed";
 import { Reveal } from "../../components/Reveal";
 import { V2Shell } from "../../components/v2/V2Shell";
+import { experiences, trustedBrands } from "../../data/portfolio";
 
 const navItems = [
   { href: "#prestations", label: "Prestations" },
@@ -88,69 +89,6 @@ const teaching = [
   "Intervenant à ISART Digital (depuis 2024)",
   "Formateur en Narrative Design (Artwork-VFX)",
   "Professeur en Narrative Design / Scénario (Brassart)",
-] as const;
-
-type Experience = {
-  role: string;
-  project: string;
-  href?: string;
-  studio?: string;
-  platform: string;
-};
-
-const experiences: Experience[] = [
-  {
-    role: "Narrative Designer",
-    project: "Projet non annoncé",
-    studio: "Artefacts Studio",
-    platform: "PS5, Xbox, PC",
-  },
-  {
-    role: "Game / Narrative Designer",
-    project: "The Sandbox",
-    href: "https://www.sandbox.game/",
-    platform: "PC",
-  },
-  {
-    role: "Narrative Designer",
-    project: "Dune: Spice Wars",
-    href: "https://www.shirogames.com/dune-spice-wars",
-    studio: "Shiro Games",
-    platform: "PC",
-  },
-  {
-    role: "Game / Narrative Designer",
-    project: "Projet non annoncé",
-    studio: "Tap4Fun Paris",
-    platform: "F2P mobile",
-  },
-  {
-    role: "Game Designer / Narrative Designer",
-    project: "Love Stars",
-    href: "https://pocketstory.games/",
-    studio: "Pocket Story",
-    platform: "F2P mobile",
-  },
-  {
-    role: "Narrative Designer (Game Jams)",
-    project: "Projets narratifs en 48h",
-    platform: "Conquistador · Space Immo · Utopiales Game Jam",
-  },
-];
-
-const trustedBrands = [
-  { name: "Shiro Games", src: "/images/trusted/shiro-games.svg" },
-  { name: "The Sandbox", src: "/images/trusted/sandbox.svg" },
-  { name: "Artefacts Studio", src: "/images/trusted/artefacts.svg" },
-  { name: "tap4fun", src: "/images/trusted/tap4fun.svg" },
-  { name: "pocketStory", src: "/images/trusted/pocketstory.svg" },
-  { name: "ISART Digital", src: "/images/trusted/isart.svg" },
-  { name: "Brassart", src: "/images/trusted/brassart.svg" },
-  { name: "Dune", src: "/images/trusted/dune.svg" },
-  { name: "Atari", src: "/images/trusted/atari.svg" },
-  { name: "Warner Music Group", src: "/images/trusted/warner.svg" },
-  { name: "Hellfest", src: "/images/trusted/hellfest.svg" },
-  { name: "Metallica", src: "/images/trusted/metallica.svg" },
 ] as const;
 
 function ArrowUpRight() {
@@ -404,19 +342,26 @@ export default function HomePageV2() {
           </h2>
           <ul className="v2-xp">
             {experiences.map((item) => (
-              <li key={`${item.role}-${item.project}`}>
-                <p className="v2-xp__role">{item.role}</p>
-                <p className="v2-xp__project">
-                  {item.href ? (
-                    <a href={item.href} target="_blank" rel="noreferrer">
-                      {item.project}
-                    </a>
-                  ) : (
-                    item.project
-                  )}
-                  {item.studio ? ` · ${item.studio}` : null}
-                </p>
-                <p className="v2-xp__platform">{item.platform}</p>
+              <li key={`${item.role}-${item.project}`} className="v2-xp__item">
+                {item.image ? (
+                  <div className="v2-xp__media">
+                    <img src={item.image} alt="" loading="lazy" />
+                  </div>
+                ) : null}
+                <div className="v2-xp__body">
+                  <p className="v2-xp__role">{item.role}</p>
+                  <p className="v2-xp__project">
+                    {item.href ? (
+                      <a href={item.href} target="_blank" rel="noreferrer">
+                        {item.project}
+                      </a>
+                    ) : (
+                      item.project
+                    )}
+                    {item.studio ? ` · ${item.studio}` : null}
+                  </p>
+                  <p className="v2-xp__platform">{item.platform}</p>
+                </div>
               </li>
             ))}
           </ul>

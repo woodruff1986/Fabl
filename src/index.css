@@ -639,6 +639,10 @@ button {
 }
 
 .xp-list__item {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 1rem;
+  align-items: center;
   padding: 1.15rem 0;
   border-bottom: 1px dashed rgba(29, 29, 30, 0.28);
   font-family: var(--mono);
@@ -646,6 +650,25 @@ button {
 
 .xp-list__item:first-child {
   border-top: 1px dashed rgba(29, 29, 30, 0.28);
+}
+
+.xp-list__media {
+  width: 5.5rem;
+  height: 5.5rem;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  overflow: hidden;
+}
+
+.xp-list__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.35rem;
+}
+
+.xp-list__body {
+  min-width: 0;
 }
 
 .xp-list__role {
@@ -712,7 +735,7 @@ button {
   align-items: center;
   justify-content: center;
   aspect-ratio: 1;
-  padding: 0.55rem;
+  padding: 0.65rem;
   border: 1px solid var(--line);
   background: var(--panel);
   overflow: hidden;
